@@ -1,0 +1,5 @@
+.contDialogo {
+  display: flex;
+  border: 3px solid white;
+  border-radius: 32px;
+}
