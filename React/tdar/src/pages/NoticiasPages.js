@@ -1,5 +1,5 @@
 import React from "react";
-import  { NavMenuNoticias } from "../components/NavMenu";
+import  NavMenu from "../components/NavMenu";
 import { EncabezadoNoticias } from "../components/Encabezados";
 import Piefinal from "../components/PieFinal";
 import noticia1 from "../imagenes/noticia1museodelaluna.jpg"
@@ -11,7 +11,7 @@ const NoticiasPages = () => {
     return (
         <div className="NoticiasGeneral">
 
-            <NavMenuNoticias />
+            <NavMenu />
 
             <EncabezadoNoticias />
 

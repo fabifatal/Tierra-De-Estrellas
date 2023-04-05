@@ -1,56 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap");
 
 :root {
-    --padding-container: 100px 0;
-    --color-title: #001A49;
+  --padding-container: 100px 0;
+  --color-title: #001a49;
 }
 
 /*0000000000000000000000000000000 Inicio inicio 000000000000000000000000000000000*/
 /* ------------Inicio body general----------------------------------------------*/
-body{
-
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 /*------------ Fin body general-------------------------------------------------*/
 
 /*------------- Inicio encabezado-----------------------------------------------*/
-.container{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    /*background-color: black;*/
-    padding: var(--padding-container);
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  /*background-color: black;*/
+  padding: var(--padding-container);
 }
 
-.encabezado{
-    width: 100%;
-    height: 70vh;
-    min-height: 600px;
-    max-height: 800px;
-    position: relative;
-    display: grid; 
-    grid-template-rows: 100px 1fr;
-    color: rgb(255, 240, 250);
+.encabezado {
+  width: 100%;
+  height: 70vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  grid-template-rows: 100px 1fr;
+  color: rgb(255, 240, 250);
 }
 
-.encabezado::before{
-    content: "";
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%), url("../imagenes/Inicio.jpg");
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
-    z-index: -1;
+.encabezado::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
+    url("../imagenes/Inicio.jpg");
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  z-index: -1;
 }
 /*------------- Fin encabezado-----------------------------------------------*/
 
 /*-------------- Inicio menu-------------------------------------------------*/
 
-.menux{
+/* .menux{
     background-color: #000000;
     position: sticky;
     top: 0;
@@ -85,11 +86,11 @@ body{
 .menu_links {
     color: #ffffff;
     text-decoration: none;
-}
+} */
 
 /* pero ojo este navegacion de menu y el navegacion close es netamente para cuando se ve desde dispositivos
 moviles O_O*/
-.menu_menu{
+/* .menu_menu{
     margin-left: auto;
     cursor: pointer;
     display: none;
@@ -103,22 +104,22 @@ moviles O_O*/
 
 .menu_close {
     display: var(--show, none);
-}
+} */
 /*-------------- Fin menu-------------------------------------------------*/
 
 /*-------------- Inicio texto enmedio del encabezado----------------------*/
 
-.encabezado_container{
-    max-width: 800px;
-    display:grid;
-    --padding-container:0;
-    grid-auto-rows: max-content;
-    align-content: center;
-    gap: 1em;
-    padding-bottom: 100px;
-    text-align: center;
+.encabezado_container {
+  max-width: 800px;
+  display: grid;
+  --padding-container: 0;
+  grid-auto-rows: max-content;
+  align-content: center;
+  gap: 1em;
+  padding-bottom: 100px;
+  text-align: center;
 }
-
+/*
 .encabezado_title{
     font-size: 3rem;
 }
@@ -135,17 +136,17 @@ moviles O_O*/
     text-decoration: none;
     padding: 13px 30px;
     border-radius: 32px;
-}
+} */
 /*-------------- Fin texto enmedio del encabezado----------------------*/
 
 /*-------------Inicio texto bajo el contenedor del encabezado----------------*/
 
-.bajoEncabezado{
+/* .bajoEncabezado{
     text-align: center;
 }
 
 .subtitle{
-    color: var(--color-title); /* llamamos a root*/
+    color: var(--color-title); 
     font-size: 2rem;
     margin-bottom: 25px;
 }
@@ -169,20 +170,19 @@ moviles O_O*/
     gap: 1em;
     justify-items: center;
     width: 260px;
-   /* overflow: hidden;*/ /*este es para ocultarme lo que se exceda pero me esta dando jugo*/
     margin: 0 auto;
 }
 
 .imgBajoEncabezado {
     width: 300px;
-}
+} */
 /*-------------Fin texto bajo el contenedor del encabezado----------------*/
 
 /*------------- Inicio astronomos conocidos slide-------------------------*/
 
-.astronomos{
+/* .astronomos{
     background-color: #e5e5f7;
-    /*opacity: 0.8;*/
+
     background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
     background-size: 20px 20px;
     background-position: 0 0,10px 10px;
@@ -193,11 +193,11 @@ moviles O_O*/
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     align-items: center;
-}
+} */
 
 /*dandole forma a lo que puse dentro del contenedor de astronomos*/
 
-.astronomos{
+/* .astronomos{
     background-color: #e5e5f7;
 }
 
@@ -248,13 +248,13 @@ moviles O_O*/
 .astronomos_arrow{
     width: 90%;
     cursor: pointer;
-}
+} */
 
 /*------------- Fin astronomos conocidos slide-------------------------*/
 
 /*-------------- Inicio pie de pagina----------------------------------*/
 
-.piefinal{
+/* .piefinal{
     background-color: #1D293F;
 }
 
@@ -274,7 +274,7 @@ moviles O_O*/
 
 .piefinal_img{
     width: 30px;
-}
+} */
 /*-------------- Fin pie de pagina----------------------------------*/
 
 /*-------------------------------------------------------------------------------------------*/
@@ -285,7 +285,7 @@ moviles O_O*/
 /* Como quiero mantener la misma estructura del inicio en nosotros cambio muy pocas cosas por tanto
 renombro lo que en particular quiero cambiar */
 
-.encabezadoNosotros{
+/* .encabezadoNosotros{
     width: 100%;
     height: 70vh;
     min-height: 900px;
@@ -307,15 +307,13 @@ renombro lo que en particular quiero cambiar */
     background-size: cover;
     clip-path: polygon(100% 0, 100% 100%, 50% 62%, 0 100%, 0 0);
     z-index: -1;
-}
-
-
+} */
 
 /*00000000000000000000000000 Fin nosotros 000000000000000000000000000000000*/
 
 /*00000000000000000000000000 Inicio noticias 000000000000000000000000000000*/
 
-.encabezadoNoticias{
+/* .encabezadoNoticias{
     width: 100%;
     height: 70vh;
     min-height: 900px;
@@ -337,27 +335,13 @@ renombro lo que en particular quiero cambiar */
     background-size: cover;
     clip-path: circle(62.5% at 50% 22%);
     z-index: -1;
-}
-
+} */
 
 /*00000000000000000000000000 Fin noticias 000000000000000000000000000000*/
 
 /*00000000000000000000000000 Inicio nosotros 000000000000000000000000000000000*/
 
 /*00000000000000000000000000 Fin nosotros 000000000000000000000000000000000*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*00000000000000000000000000 Inicio Inicio sesion-registro 000000000000000000000000000000*/
 
@@ -459,16 +443,6 @@ renombro lo que en particular quiero cambiar */
 
 /* 14:07 */
 
-
-
-
-
-
-
-
-
-
-
 /*.bodylogin{
     margin: 0;
     padding: 0 ;
@@ -548,7 +522,6 @@ renombro lo que en particular quiero cambiar */
     background: #fff;
     color: #162938;
 }*/
-
 
 /*.piefinallogin{
     background-color: #1D293F;

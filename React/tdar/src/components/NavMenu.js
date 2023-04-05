@@ -1,187 +1,32 @@
 import React from "react";
-import x from "../imagenes/close.svg"
-import menu from "../imagenes/menu.svg"
-import { Link } from "react-router-dom";
+import x from "../imagenes/close.svg";
+import menu from "../imagenes/menu.svg";
+import { Container , Navbar , Nav , NavDropdown} from "react-bootstrap";
 
 
-const NavMenuInicio = () => {
-    return (
-        <div className="menux">
-            <nav className="menu container">
-                <div className="menu_logo">
-
-                    <h2 className="menu_title">Tierra De Estrellas</h2>
-                    <br />
-                </div>
-
-                <ul className="menu_link">
-
-                    <li className="menu_items">
-                        <Link to="/" className="menu_links">Inicio</Link>
-                    </li>
-                    <li className="menu_items">
-                        <Link to="/Nosotros" className="menu_links">Nosotros</Link>
-                    </li>
-                    <li className="menu_items">
-                    <Link to="/Astronomia" className="menu_links">Astronomia</Link>
-                    </li>
-                    <li className="menu_items">
-                        <Link to="/Noticias" className="menu_links">Noticias</Link>
-                    </li>
-                    <li className="menu_items">
-                        <a href="#" className="menu_links">JUGAR</a>
-                    </li>
-                    <li className="menu_items">
-                        <a href="#" className="menu_links">Inicio Sesion </a>
-                    </li>
-
-                    <img src={x} className="menu_close" />
-
-                </ul>
-
-                <div className="menu_menu">
-                    <img src={menu} className="menu_img" />
-                </div>
-
-            </nav>
-        </div>
-
-    )
-}
-
-const NavMenuNosotros = () => {
-    return (
-        <div className="menux">
-            <nav className="menu container">
-                <div className="menu_logo">
-
-                    <h2 className="menu_title">Tierra De Estrellas</h2>
-                    <br />
-                </div>
-
-                <ul className="menu_link">
-
-                    <li className="menu_items">
-                        <Link to="/" className="menu_links">Inicio</Link>
-                    </li>
-                    <li className="menu_items">
-                        <Link to="/Nosotros" className="menu_links">Nosotros</Link>
-                    </li>
-                    <li className="menu_items">
-                    <Link to="/Astronomia" className="menu_links">Astronomia</Link>
-                    </li>
-                    <li className="menu_items">
-                        <Link to="/Noticias" className="menu_links">Noticias</Link>
-                    </li>
-                    <li className="menu_items">
-                        <a href="#" className="menu_links">JUGAR</a>
-                    </li>
-                    <li className="menu_items">
-                        <a href="#" className="menu_links">Inicio Sesion </a>
-                    </li>
-
-                    <img src={x} className="menu_close" />
-
-                </ul>
-
-                <div className="menu_menu">
-                    <img src={menu} className="menu_img" />
-                </div>
-
-            </nav>
-        </div>
-
-    )
-}
-
-const NavMenuNoticias = () => {
-    return (
-        <div className="menux">
-            <nav className="menu container">
-                <div className="menu_logo">
-
-                    <h2 className="menu_title">Tierra De Estrellas</h2>
-                    <br />
-                </div>
-
-                <ul className="menu_link">
-
-                    <li className="menu_items">
-                        <Link to="/" className="menu_links">Inicio</Link>
-                    </li>
-                    <li className="menu_items">
-                        <Link to="/Nosotros" className="menu_links">Nosotros</Link>
-                    </li>
-                    <li className="menu_items">
-                    <Link to="/Astronomia" className="menu_links">Astronomia</Link>
-                    </li>
-                    <li className="menu_items">
-                        <Link to="/Noticias" className="menu_links">Noticias</Link>
-                    </li>
-                    <li className="menu_items">
-                        <a href="#" className="menu_links">JUGAR</a>
-                    </li>
-                    <li className="menu_items">
-                        <a href="#" className="menu_links">Inicio Sesion </a>
-                    </li>
-
-                    <img src={x} className="menu_close" />
-
-                </ul>
-
-                <div className="menu_menu">
-                    <img src={menu} className="menu_img" />
-                </div>
-
-            </nav>
-        </div>
-
-    )
-}
-
-const NavMenuAstronomia = () => {
-    return (
-        <div className="menux">
-            <nav className="menu container">
-                <div className="menu_logo">
-
-                    <h4 className="menu_title">Tierra De Estrellas</h4>
-                    <br />
-                </div>
-
-                <ul className="menu_link">
-
-                    <li className="menu_items">
-                        <Link to="/" className="menu_links">Inicio</Link>
-                    </li>
-                    <li className="menu_items">
-                        <Link to="/Nosotros" className="menu_links">Nosotros</Link>
-                    </li>
-                    <li className="menu_items">
-                    <Link to="/Astronomia" className="menu_links">Astronomia</Link>
-                    </li>
-                    <li className="menu_items">
-                        <Link to="/Noticias" className="menu_links">Noticias</Link>
-                    </li>
-                    <li className="menu_items">
-                        <a href="#" className="menu_links">JUGAR</a>
-                    </li>
-                    <li className="menu_items">
-                        <a href="#" className="menu_links">Inicio Sesion </a>
-                    </li>
-
-                    <img src={x} className="menu_close" />
-
-                </ul>
-
-                <div className="menu_menu">
-                    <img src={menu} className="menu_img" />
-                </div>
-
-            </nav>
-        </div>
-
-    )
-}
-
-export {NavMenuInicio,NavMenuNosotros,NavMenuNoticias,NavMenuAstronomia};
+const NavMenu = () => {
+  return (
+    <Navbar sticky="top" bg="primary" variant="dark" expand="lg" >
+      <Container>
+        <Navbar.Brand href="#home">Tierra De Estrellas</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Inicio</Nav.Link>
+            <Nav.Link href="/Nosotros">Nosotros</Nav.Link>
+            <Nav.Link href="/Noticias">Noticias</Nav.Link>
+            <Nav.Link href="/Juego">JUGAR</Nav.Link>
+            <Nav.Link href="/InicioSesion">Inicio Sesión</Nav.Link>
+            <NavDropdown title="Información" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/Astronomia">Astronomía</NavDropdown.Item>
+              <NavDropdown.Item href="/ContaminacionLuminica">
+                Contaminación Lumínica
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
+export default NavMenu;

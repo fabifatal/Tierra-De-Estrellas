@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import  { NavMenuNosotros } from "../components/NavMenu";
+import  NavMenu from "../components/NavMenu";
 import { EncabezadoNosotros } from "../components/Encabezados";
 import { BajoEncabezadoNosotros } from "../components/Comparacion";
 import { CarrucelNosotros } from "../components/Carrucel";
@@ -11,7 +11,7 @@ const NosotrosPages =( ) =>{
 return(
     <div className="NosotrosGeneral">
 
-    <NavMenuNosotros/>
+    <NavMenu/>
 
     <EncabezadoNosotros/>
 

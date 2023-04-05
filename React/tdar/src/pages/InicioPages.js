@@ -1,19 +1,21 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import { Link } from "react-router-dom";
-import  { NavMenuInicio } from "../components/NavMenu";
+import  NavMenu from "../components/NavMenu";
 import { EncabezadoInicio } from "../components/Encabezados";
 import { BajoEncabezadoInicio } from "../components/Comparacion";
 import { CarrucelInicio } from "../components/Carrucel";
 import Piefinal from "../components/PieFinal";
 
 const InicioPages = () => {
+
+    const tituloInicio = "Inicio";
+
     return (
-        <div className="InicioGeneral">
+        <div>
 
-            <NavMenuInicio/>
+            <NavMenu className="menux"/>
 
-            <EncabezadoInicio/>
+            <EncabezadoInicio titulo={tituloInicio}/>
 
             <BajoEncabezadoInicio/>
 
