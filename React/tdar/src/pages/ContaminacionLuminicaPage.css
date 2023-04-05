@@ -1,0 +1,28 @@
+.contcontaminacion{
+   display: flex; 
+   justify-content: center;
+}
+
+#centrador {
+    position: relative;
+    width: 600xp;
+    height: 400xp;
+}
+
+#imagen {
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin:auto;
+    object-fit:initial;
+}
+
+#parrafo {
+    position: relative;
+    padding: 20px;
+    margin:auto;
+    height: 100%;
+    background-color: rgb(206, 182, 205);
+}
