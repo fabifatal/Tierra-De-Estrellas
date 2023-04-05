@@ -1,0 +1,16 @@
+.contBarra {
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 32px;
+}
+
+.contNivel {
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 32px;
+  padding: 4%;
+}
+
+.tamanioBarraInferior {
+  height: 50%;
+}

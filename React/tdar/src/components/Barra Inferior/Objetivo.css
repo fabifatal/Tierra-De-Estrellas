@@ -1,0 +1,8 @@
+.contObjetivo {
+  border: 3px solid white;
+  border-radius: 32px;
+}
+
+.contObjetivo h3 {
+  font-size: larger;
+}

@@ -1,0 +1,31 @@
+.formCoordenadas {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border: 3px solid white;
+  border-radius: 32px;
+}
+
+.formCoordenadas form{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.formCoordenadas input{
+    min-width: 50px;
+    width: 20%;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+.formCoordenadas h3{
+  font-size: larger;
+}
+
+.inCoord {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}

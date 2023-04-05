@@ -1,0 +1,4 @@
+.contJuego{
+    display: flex;
+    flex-direction: column;
+}
