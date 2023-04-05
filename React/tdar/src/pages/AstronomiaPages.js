@@ -1,12 +1,12 @@
 import React from "react";
-import { NavMenuAstronomia } from "../components/NavMenu";
+import NavMenu from "../components/NavMenu";
 import { EncabezadoAstronomia } from "../components/Encabezados";
 import Piefinal from "../components/PieFinal";
 
 const AstronomiaPages = () => {
     return (
         <div id ="AstronomiaGeneral">
-            <NavMenuAstronomia />
+            <NavMenu />
             <EncabezadoAstronomia />
 
             <div class="accordion" id="accordionPanelsStayOpenExample">
