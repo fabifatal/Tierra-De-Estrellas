@@ -34,10 +34,7 @@ const BajoEncabezadoNosotros = () => {
     return (
     <div className="comparaciongeneral">
          <section className="container bajoEncabezado">
-                    <h2 className="subtitle ">La Contaminacion Luminica, el enemigo de los cielos de Chile</h2>
-                    <p className="bajoEncabezado_paragraph"> Este enemigo silencioso aumenta cada año un 2%, el cual va afectando la visibilidad de los cielos <br/> A la larga si seguimos igual perderemos toda vision hacia el exterior</p>
-
-
+                    
                     <div className="comparacion">
                         <article className="imgComparacion">
                             <img src= {mision} className="imgBajoEncabezado"/>

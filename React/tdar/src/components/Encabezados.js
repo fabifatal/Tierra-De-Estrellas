@@ -1,6 +1,4 @@
 import React from "react";
-import { Container, Image } from "react-bootstrap";
-import imgInicio from "../imagenes/Inicio.jpg";
 
 const EncabezadoInicio = () => {
     return (
@@ -38,7 +36,7 @@ const EncabezadoNoticias = () => {
 
 const EncabezadoAstronomia = () => {
   return (
-    <div className="encabezadoNoticias">
+    <div className="encabezadoAstronomia">
       <div className="encabezado_container container">
         <h1 className="encabezado_title">Conceptos</h1>
         <p className="encabezado_paragraph">
