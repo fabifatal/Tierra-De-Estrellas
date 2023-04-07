@@ -7,6 +7,7 @@ import noticia2 from "../imagenes/noticias2profemaza.jpg"
 import noticia3 from "../imagenes/noticia3observaabierto.jpg"
 import noticia4 from "../imagenes/noticia4cata.jpg"
 
+
 const NoticiasPages = () => {
     return (
         <div className="NoticiasGeneral">
