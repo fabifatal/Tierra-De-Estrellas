@@ -19,20 +19,20 @@ const BarraInferior = (props) => {
   };
 
   return (
-    <Row className="contBarra bg-primary text-white p-4">
+    <Row className="contBarra bg-primary text-white">
       <Correcto
         nivelActual={nivel}
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
       <Col>
-        <Objetivo nivelActual={nivel} className="tamanioBarraInferior" />
+        <Objetivo nivelActual={nivel}/>
       </Col>
-      <Col>
+      <Col className="contNivelYForm">
         <h1 className="contNivel bg-secondary">Nivel {nivel + 1}</h1>
         <FormCoordenadas onRespuesta={addInput} />
       </Col>
-      <Col>
+      <Col xs={4}>
         <Dialogo nivelActual={nivel} />
       </Col>
       <Col>

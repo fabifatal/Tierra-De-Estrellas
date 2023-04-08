@@ -1,16 +1,33 @@
 .contBarra {
-  align-items: center;
+  align-items:flex-start;
   border: 3px solid white;
   border-radius: 32px;
+  padding: 2vh;
 }
 
 .contNivel {
   text-align: center;
   border: 3px solid white;
   border-radius: 32px;
-  padding: 4%;
+  padding: 4vh;
 }
 
-.tamanioBarraInferior {
-  height: 50%;
+
+@media all and (max-height: 600px){
+  .contBarra{
+    height: 120px;
+    padding: 0.5vh;
+  }
+
+  .contNivel{
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 32px;
+    font-size:large;
+  }
+
+  .contNivelYForm{
+    display: flex;
+  }
+  
 }

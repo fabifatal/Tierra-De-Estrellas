@@ -4,17 +4,18 @@
   justify-content: center;
   border: 3px solid white;
   border-radius: 32px;
+  padding: 2vh;
 }
 
 .formCoordenadas form{
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-  gap: 30px;
+  gap: 1vh;
 }
 
 .formCoordenadas input{
-    min-width: 50px;
+    min-width: 8vh;
     width: 20%;
     margin-top: 5%;
     border-radius: 5px;
@@ -29,3 +30,7 @@
   align-items: baseline;
   gap: 10px;
 }
+
+@media all and (max-height: 600px){
+
+} 

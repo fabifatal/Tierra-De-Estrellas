@@ -21,7 +21,7 @@ const FormCoordenadas = (props) => {
   };
 
   return (
-    <div className="formCoordenadas text-center bg-secondary p-4 ">
+    <div className="formCoordenadas text-center bg-secondary">
       <h3>Ingrese Coordenadas</h3>
       <form onSubmit={submitHandler}> 
         <div className="inCoord">

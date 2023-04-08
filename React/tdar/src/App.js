@@ -8,6 +8,7 @@ import AstronomiaPages from './pages/AstronomiaPages';
 import JuegoPage from './pages/JuegoPage';
 import InicioSesionPages from './pages/InicioSesionPages';
 import RegistratePage from './pages/RegistratePage';
+import JuegoTamanioPrueba from './pages/JuegoTamanioPrueba';
 
 
 
@@ -19,7 +20,7 @@ const App = () => {
         <Route path="/Nosotros" element={<NosotrosPages/>}></Route>
         <Route path="/Noticias" element={<NoticiasPages/>}></Route>
         <Route path="/Astronomia" element={<AstronomiaPages/>}></Route>
-        <Route path="/Juego" element={<JuegoPage />}></Route>
+        <Route path="/Juego" element={<JuegoTamanioPrueba />}></Route>
         <Route path="/InicioSesion" element={<InicioSesionPages />}></Route>
         <Route path="/registrate" element={<RegistratePage />}></Route>
       
