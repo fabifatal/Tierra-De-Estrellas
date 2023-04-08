@@ -56,7 +56,7 @@ const CarrucelInicio = () => {
                 <section className="testimony__body " data-id="4">
                     <div className="testimony__textst">
                         <h2 className="subtitle">Mónica Rubio López <span className="testimony__course">Astrónoma Chilena</span></h2>
-                        <p className="testimony__review">directora de la Sociedad Chilena de Astronomía (SOCHIAS) entre 2019 y 2021. Por sus importantes contribuciones a la astronomía obtuvo el Premio Nacional de Ciencias Exactas del año 2021. En 2015 encabezó un estudio que fue publicado en la Revista Nature, sobre una nueva forma de maternidad estelar, descubierta tras el hallazgo de una "incubadora" de estrellas al alero de Wolf-Lundmark-Melotte (WLM), que se encuentra a tres millones de años luz del planeta Tierra</p>
+                        <p className="testimony__review">Directora de la Sociedad Chilena de Astronomía (SOCHIAS) entre 2019 y 2021. Por sus importantes contribuciones a la astronomía obtuvo el Premio Nacional de Ciencias Exactas del año 2021. En 2015 encabezó un estudio que fue publicado en la Revista Nature, sobre una nueva forma de maternidad estelar, descubierta tras el hallazgo de una "incubadora" de estrellas al alero de Wolf-Lundmark-Melotte (WLM), que se encuentra a tres millones de años luz del planeta Tierra</p>
                     </div>
 
                     <figure className="testimony__picture">
@@ -75,14 +75,14 @@ const CarrucelInicio = () => {
 const CarrucelNosotros = () => {
     return (
         <div className="testimony">
-           
+
             <div className="testimony__container container">
                 <img src={izquierda} className="testimony__arrow" id="before" />
 
                 <section className="testimony__body testimony__body--show" data-id="1">
                     <div className="testimony__texts">
                         <h2 className="subtitle">Daniela Rivas Oyarce <span className="testimony__course">Desarrolladora Full Stack</span></h2>
-                        <p className="testimony__review">inserte su descripcion</p>
+                        <p className="testimony__review">Recientemente me uní al mundo de la programación, me generó un gran interés el desarrollo de aplicación web y mucho entusiasmo aprender cosas nuevas. Me encanta la idea de mejorar la experiencia del usuario y me genera bastante interés desarrollar y dar a conocer mi creatividad.</p>
                     </div>
 
                     <figure className="testimony__picture">
@@ -92,8 +92,8 @@ const CarrucelNosotros = () => {
 
                 <section className="testimony__body " data-id="2">
                     <div className="testimony__texts">
-                        <h2 className="subtitle">Fabian Zuñiga <span className="testimony__course">Desarrollador Full Stack</span></h2>
-                        <p className="testimony__review">inserte su descripcion</p>
+                        <h2 className="subtitle">Fabián Zúñiga <span className="testimony__course">Desarrollador Full Stack</span></h2>
+                        <p className="testimony__review">Me interesa seguir aprendiendo sobre programación ya que se ha vuelto una pasión. Me he desenvuelto con facilidad en la comunicación de proyectos y coordinación de equipos. Mi experiencia previa en la gestión musical me ha dado herramientas de trabajo en equipos que me han servido en mi desarrollo profesional.</p>
                     </div>
 
                     <figure className="testimony__picture">
@@ -103,8 +103,10 @@ const CarrucelNosotros = () => {
 
                 <section className="testimony__body " data-id="3">
                     <div className="testimony__texts">
-                        <h2 className="subtitle">Camila Berrios <span className="testimony__course">Desarrolladora Full Stack</span></h2>
-                        <p className="testimony__review">inserte su descripcion</p>
+                        <h2 className="subtitle">Camila Berríos Blanc <span className="testimony__course">Desarrolladora Full Stack</span></h2>
+                        <p className="testimony__review">Desde siempre me ha interesado el área de la ciencia. Me defino como una persona perseverante, metódica, con alta capacidad de análisis y además que constantemente va nutriéndose de nuevos conocimientos.
+                            Aspiro a lograr crecer en el área TI y poder encontrar un trabajo donde se me permita seguir puliendo mis habilidades blandas y técnicas.
+                        </p>
                     </div>
 
                     <figure className="testimony__picture">
@@ -114,7 +116,7 @@ const CarrucelNosotros = () => {
 
                 <section className="testimony__body " data-id="4">
                     <div className="testimony__texts">
-                        <h2 className="subtitle">Diego Alvarez <span className="testimony__course">Desarrollador Full Stack</span></h2>
+                        <h2 className="subtitle">Diego Álvarez Cisternas <span className="testimony__course">Desarrollador Full Stack</span></h2>
                         <p className="testimony__review">inserte su descripcion</p>
                     </div>
 
@@ -125,8 +127,8 @@ const CarrucelNosotros = () => {
 
                 <section className="testimony__body " data-id="5">
                     <div className="testimony__texts">
-                        <h2 className="subtitle">Javiera Muñoz <span className="testimony__course">Desarrolladora Full Stack</span></h2>
-                        <p className="testimony__review">inserte su descripcion</p>
+                        <h2 className="subtitle">Javiera Muñoz Velásquez <span className="testimony__course">Desarrolladora Full Stack</span></h2>
+                        <p className="testimony__review">Soy una desarrolladora Full Stack Java Junior altamente motivada y comprometida, con una sólida formación académica en Administración de Empresas. Me caracterizo por ser una persona creativa, proactiva y apasionada por la programación. Mis aspiraciones profesionales incluyen continuar mi crecimiento en el mundo de la tecnología y contribuir al éxito de proyectos de manera colaborativa, desarrollando soluciones innovadoras y eficientes que generen valor para los clientes y usuarios</p>
                     </div>
 
                     <figure className="testimony__picture">
