@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NavBar from "../components/NavBar";
 import {
   Col,
   Container,
@@ -8,11 +7,12 @@ import {
   ButtonGroup,
   Button,
 } from "react-bootstrap";
-import lumUp from "../assets/2x/Lum up@2x.png";
-import lum45Up from "../assets/2x/Lum 45 up@2x.png";
-import lum90 from "../assets/2x/Lum 90@2x.png";
-import lum45Down from "../assets/2x/Lum 45 down@2x.png";
-import lumDown from "../assets/2x/Lum down@2x.png";
+import lumUp from "../imagenes/img-juego/2x/Lum Up.png";
+import lum45Up from "../imagenes/img-juego/2x/Lum 45 Up.png";
+import lum90 from "../imagenes/img-juego/2x/Lum 90.png";
+import lum45Down from "../imagenes/img-juego/2x/Lum 45 Down.png";
+import lumDown from "../imagenes/img-juego/2x/Lum Down.png";
+import NavMenu from "../components/NavMenu";
 
 const JuegoContPage = () => {
   const [opcionLum, setOpcionLum] = useState(2);
@@ -46,7 +46,7 @@ const JuegoContPage = () => {
 
   return (
     <Container>
-      <NavBar></NavBar>
+      <NavMenu/>
       <Row className="bg-primary text-white">
         <Col xs={6} md={3} className="contLuminaria">
           <Image

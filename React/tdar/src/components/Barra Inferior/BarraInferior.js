@@ -10,7 +10,7 @@ import Correcto from "./Correcto";
 const BarraInferior = () => {
   const [modalShow, setModalShow] = useState(false);
   const [nivel, setNivel] = useState(0);
-  const correcto = ["4,3", "6,8", "1,9", "3,5", "7,2"];
+  const correcto = ["8,2", "4,3", "5,1", "8,4", "3,3"];
 
   const addInput = (input) => {
     if (correcto[nivel] == input) {
