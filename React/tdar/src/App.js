@@ -9,6 +9,7 @@ import JuegoPage from './pages/JuegoPage';
 import InicioSesionPages from './pages/InicioSesionPages';
 import RegistratePage from './pages/RegistratePage';
 import JuegoTamanioPrueba from './pages/JuegoTamanioPrueba';
+import ContaminacionLuminica from './pages/ContaminacionLuminicaPage';
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/Juego" element={<JuegoPage />}></Route>
         <Route path="/InicioSesion" element={<InicioSesionPages />}></Route>
         <Route path="/registrate" element={<RegistratePage />}></Route>
+        <Route path="/ContaminacionLuminica" element={<ContaminacionLuminicaPage/>}></Route>
       
       </Routes>
       </BrowserRouter>
