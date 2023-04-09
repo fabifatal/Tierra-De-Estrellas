@@ -5,7 +5,7 @@ import { Container, Image } from "react-bootstrap";
 
 const Objetivo = () => {
   return (
-      <Container className="text-center bg-secondary contObjetivo">
+      <Container className="contObjetivo gap-4">
       <p>Objeto a Encontrar</p>
       <img src={objetivo}/>
     </Container>
