@@ -51,9 +51,25 @@ const EncabezadoAstronomia = () => {
   );
 };
 
+const EncabezadoContaminacion = () => {
+  return (
+    <div className="encabezadocontaminacion">
+      <div className="encabezado_container container">
+        <h1 className="encabezado_title">Conceptos</h1>
+        <p className="encabezado_paragraph">
+        Contaminacion Luminica
+        <br/>
+        Te invito a saber sobre la Contaminación Luminíca
+        </p>
+      </div>
+    </div>
+  );
+};
+
 export {
   EncabezadoInicio,
   EncabezadoNosotros,
   EncabezadoNoticias,
   EncabezadoAstronomia,
+  EncabezadoContaminacion,
 };
