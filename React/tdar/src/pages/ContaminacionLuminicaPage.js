@@ -2,7 +2,7 @@ import React from "react";
 import Contlum from "../imagenes/contaminacion-luminica88398.jpg"
 import EclipseChile from "../imagenes/eclipse-chile.jpg"
 import NavMenu from "../components/NavMenu";
-import { EncabezadoContLum } from "../components/Encabezados";
+import { EncabezadoContaminacion} from "../components/Encabezados";
 import Piefinal from "../components/PieFinal";
 
 const ContaminacionLuminica = () => {
@@ -10,7 +10,7 @@ const ContaminacionLuminica = () => {
 
     <NavMenu />
 
-    <EncabezadoContLum />
+    <EncabezadoContaminacion />
 
     <div class="card mb-3">
       <div class="card-body">
