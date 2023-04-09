@@ -6,7 +6,6 @@ import FormCoordenadas from "./FormCoordenadas";
 import Objetivo from "./Objetivo";
 import Personaje from "./Personaje";
 import Correcto from "./Correcto";
-import CardJuego from "./CardJuego"
 
 const BarraInferior = () => {
   const [modalShow, setModalShow] = useState(false);
@@ -21,32 +20,33 @@ const BarraInferior = () => {
   };
 
   return (
-    <CardJuego>
-      <Row className="contBarra bg-primary text-white">
-        <Correcto
-          nivelActual={nivel}
-          show={modalShow}
-          onHide={() => setModalShow(false)}
-        />
+    <Row className="CardJuego contBarra bg-primary text-white ">
+      <Correcto
+        nivelActual={nivel}
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
 
-        <Col>
-          <Objetivo nivelActual={nivel} />
-        </Col>
+      <Col>
+        <Objetivo nivelActual={nivel} />
+      </Col>
 
-        <Col className="contNivelYForm">
-          <h1 className="contNivel bg-secondary">Nivel {nivel + 1}</h1>
-          <FormCoordenadas onRespuesta={addInput} />
-        </Col>
+      <Col className="contNivelYForm">
+        <h3 className="contNivel CardJuego bg-secondary">Nivel {nivel + 1}</h3>
+      </Col>
 
-        <Col xs={4}>
-          <Dialogo nivelActual={nivel} />
-        </Col>
+      <Col>
+        <FormCoordenadas onRespuesta={addInput} />
+      </Col>
 
-        <Col>
-          <Personaje />
-        </Col>
-      </Row>
-    </CardJuego>
+      <Col xs={4}>
+        <Dialogo nivelActual={nivel} />
+      </Col>
+
+      <Col>
+        <Personaje />
+      </Col>
+    </Row>
   );
 };
 
