@@ -7,6 +7,7 @@ import imgCorrecto2 from "../../imagenes/img-barrainferior/correcto_2.jpg";
 import imgCorrecto3 from "../../imagenes/img-barrainferior/correcto_3.jpg";
 import imgCorrecto4 from "../../imagenes/img-barrainferior/correcto_4.jpg";
 import imgCorrecto5 from "../../imagenes/img-barrainferior/correcto_5.jpg";
+import { Image } from "react-bootstrap";
 
 const Correcto = (props) => {
   const nivel = props.nivelActual - 1;
@@ -31,7 +32,6 @@ const Correcto = (props) => {
     <Modal
       className="modCorrecto text-white"
       {...props}
-      size="sm"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
@@ -39,7 +39,7 @@ const Correcto = (props) => {
         <Modal.Title id="contained-modal-title-vcenter">¡Correcto!</Modal.Title>
       </Modal.Header>
       <Modal.Body className="bg-secondary">
-        <img src={imagenes[nivel]} />
+        <Image src={imagenes[nivel]} />
         <h4>{tituloCorrecto[nivel]}</h4>
         <p>{descripcionCorrecto}</p>
       </Modal.Body>

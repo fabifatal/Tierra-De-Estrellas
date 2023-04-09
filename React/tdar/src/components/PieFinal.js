@@ -17,7 +17,7 @@ const Piefinal = () => {
                     <a href="#" className="piefinal_icons"><img src= {email} className="piefinal_img" /></a>
                 </div>
 
-                <h3 className="piefinal_copyright">Derechos reservados &copy; Tierra De Estrellas</h3>
+                <h6 className="piefinal_copyright">Derechos reservados &copy; Tierra De Estrellas</h6>
             </section>
         </div>
     )

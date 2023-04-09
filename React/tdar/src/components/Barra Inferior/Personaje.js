@@ -1,6 +1,6 @@
 import React from "react";
 import "./Personaje.css";
-import npc from "../../imagenes/img-barrainferior/NPC.png"
+import npc from "../../imagenes/img-juego/4x/Profe Maza Vector.png"
 
 
 const Personaje = () => {

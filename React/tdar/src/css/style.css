@@ -1,157 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap");
 
 :root {
-  --padding-container: 100px 0;
-  --color-title: #001a49;
+    --padding-container: 100px 0;
+    --color-title: #001a49;
 }
 
-/*0000000000000000000000000000000 Inicio inicio 000000000000000000000000000000000*/
 /* ------------Inicio body general----------------------------------------------*/
 body {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
+
 /*------------ Fin body general-------------------------------------------------*/
 
 /*------------- Inicio encabezado-----------------------------------------------*/
-.contenedor {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-  /*background-color: black;*/
-  padding: var(--padding-container);
-}
+/*.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /*background-color: black;
+    padding: var(--padding-container);
+}*/
 
 .encabezado {
-  width: 100%;
-  height: 70vh;
-  min-height: 600px;
-  max-height: 800px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  grid-template-rows: 100px 1fr;
-  color: rgb(255, 240, 250);
+    width: 100%;
+    height: 70vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 240, 250);
 }
 
 .encabezado::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
-    url("../imagenes/Inicio.jpg");
-  background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
-  z-index: -1;
-}
-/*------------- Fin encabezado-----------------------------------------------*/
-
-/*-------------- Inicio menu-------------------------------------------------*/
-
-/* .menux{
-    background-color: #000000;
-    position: sticky;
+    content: "";
+    position: absolute;
     top: 0;
-}
-.menu {
-    --padding-container: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #0000008b;
-    z-index: 99;
+    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
+        url("../imagenes/Inicio.jpg");
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
 }
 
-.menu_title {
-    font-weight: 300;
-    color: #e5e5f7;
-}
-
-.menu_link {
-    margin-left: auto;
-    padding: 0;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: max-content;
-    gap: 2em;
-}
-
-.menu_items {
-    list-style: none;
-}
-
-.menu_links {
-    color: #ffffff;
-    text-decoration: none;
-} */
-
-/* pero ojo este navegacion de menu y el navegacion close es netamente para cuando se ve desde dispositivos
-moviles O_O*/
-/* .menu_menu{
-    margin-left: auto;
-    cursor: pointer;
-    display: none;
-}
-
-.menu_img {
-    display: block;
-    width: 30px;
-}
-
-
-.menu_close {
-    display: var(--show, none);
-} */
-/*-------------- Fin menu-------------------------------------------------*/
+/*------------- Fin encabezado-----------------------------------------------*/
 
 /*-------------- Inicio texto enmedio del encabezado----------------------*/
 
 .encabezado_container {
-  max-width: 800px;
-  display: grid;
-  --padding-container: 0;
-  grid-auto-rows: max-content;
-  align-content: center;
-  gap: 1em;
-  padding-bottom: 100px;
-  text-align: center;
-}
-/*
-.encabezado_title{
-    font-size: 3rem;
+    max-width: 800px;
+    display: grid;
+    --padding-container: 0;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
 }
 
-.encabezado_paragraph{
-    margin-bottom: 20px;
-}
-
-.botonajuego{
-    display: inline-block;
-    background-color: #e60ea562;
-    justify-self: center;
-    color: #fff;
-    text-decoration: none;
-    padding: 13px 30px;
-    border-radius: 32px;
-} */
 /*-------------- Fin texto enmedio del encabezado----------------------*/
 
 /*-------------Inicio texto bajo el contenedor del encabezado----------------*/
 
-/* .bajoEncabezado{
+.bajoEncabezado {
     text-align: center;
 }
 
-.subtitle{
-    color: var(--color-title); 
+.subtitle {
+    color: var(--color-title);
     font-size: 2rem;
     margin-bottom: 25px;
 }
 
-.bajoEncabezado_paragraph{
+.bajoEncabezado_paragraph {
     line-height: 2;
 }
 
@@ -175,40 +101,40 @@ moviles O_O*/
 
 .imgBajoEncabezado {
     width: 300px;
-} */
-/*-------------Fin texto bajo el contenedor del encabezado----------------*/
-
-/*------------- Inicio astronomos conocidos slide-------------------------*/
-
-/* .astronomos{
-    background-color: #e5e5f7;
-
-    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0,10px 10px;
 }
 
-.fondoAstronomos_container{
+/*-------------Fin texto bajo el contenedor del encabezado----------------*/
+
+/*------------- Inicio astronomos/nosotros slide-------------------------*/
+
+/*.astronomos {
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}
+.fondoAstronomos_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     align-items: center;
-} */
+}*/
 
-/*dandole forma a lo que puse dentro del contenedor de astronomos*/
-
-/* .astronomos{
+.testimony{
     background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
 }
 
-.fondoAstronomos_container{
+.testimony__container{
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     gap: 1em;
     align-items: center;
 }
 
-.descripcion_body{
+.testimony__body{
     display: grid;
     grid-template-columns: 1fr max-content;
     justify-content: space-between;
@@ -220,21 +146,22 @@ moviles O_O*/
     pointer-events: none;
 }
 
-.descripcion_body--show{
+
+.testimony__body--show{
     pointer-events: unset;
     opacity: 1;
     transition: opacity 1.5s ease-in-out;
 }
 
-.astronomo_img{
-    width: 250px;
-    height: 250px;
+.testimony__img{
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 30%;
 }
 
-.descripcion_text{
+.testimony__texts{
     max-width: 700px;
 }
 
@@ -245,307 +172,44 @@ moviles O_O*/
     padding: 5px;
 }
 
-.astronomos_arrow{
+.testimony__arrow{
     width: 90%;
     cursor: pointer;
-} */
+}
+
 
 /*------------- Fin astronomos conocidos slide-------------------------*/
 
 /*-------------- Inicio pie de pagina----------------------------------*/
 
-/* .piefinal{
+.piefinal {
+    
     background-color: #1D293F;
 }
 
-.piefinal_container{
+.piefinal_container {
     --padding-container: 30px 0;
     text-align: center;
     color: #fff;
 }
 
-.piefinal_copyright{
+.piefinal_copyright {
     font-weight: 300;
 }
 
-.piefinal_icons{
+.piefinal_icons {
     margin-bottom: 10px;
 }
 
-.piefinal_img{
+.piefinal_img {
     width: 30px;
-} */
+}
+
 /*-------------- Fin pie de pagina----------------------------------*/
 
-/*-------------------------------------------------------------------------------------------*/
-/*00000000000000000000000000 FIN INICIO 000000000000000000000000000000000000000*/
-
 /*00000000000000000000000000 Inicio nosotros 000000000000000000000000000000000*/
 
-/* Como quiero mantener la misma estructura del inicio en nosotros cambio muy pocas cosas por tanto
-renombro lo que en particular quiero cambiar */
-
-/* .encabezadoNosotros{
-    width: 100%;
-    height: 70vh;
-    min-height: 900px;
-    max-height: 800px;
-    position: relative;
-    display: grid; 
-    grid-template-rows: 100px 1fr;
-    color: rgb(255, 240, 250);
-    
-}
-
-.encabezadoNosotros::before{
-    content: "";
-    position: absolute; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%), url("../imagenes/nosotros.jpg");
-    background-size: cover;
-    clip-path: polygon(100% 0, 100% 100%, 50% 62%, 0 100%, 0 0);
-    z-index: -1;
-} */
-
-/*00000000000000000000000000 Fin nosotros 000000000000000000000000000000000*/
-
-/*00000000000000000000000000 Inicio noticias 000000000000000000000000000000*/
-
-/* .encabezadoNoticias{
-    width: 100%;
-    height: 70vh;
-    min-height: 900px;
-    max-height: 800px;
-    position: relative;
-    display: grid; 
-    grid-template-rows: 100px 1fr;
-    color: rgb(255, 240, 250);
-    
-}
-
-.encabezadoNoticias::before{
-    content: "";
-    position: absolute; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%), url("../imagenes/noticias.jpg");
-    background-size: cover;
-    clip-path: circle(62.5% at 50% 22%);
-    z-index: -1;
-} */
-
-/*00000000000000000000000000 Fin noticias 000000000000000000000000000000*/
-
-/*00000000000000000000000000 Inicio nosotros 000000000000000000000000000000000*/
-
-/*00000000000000000000000000 Fin nosotros 000000000000000000000000000000000*/
-
-/*00000000000000000000000000 Inicio Inicio sesion-registro 000000000000000000000000000000*/
-
-/*.encabezadoLogin{
-    width: 100%;
-    height: 1000vh;
-    min-height: 900px;
-    max-height: 800px;
-    position: relative;
-    display: grid; 
-    grid-template-rows: 100px 1fr;
-    color: rgb(255, 240, 250);
-    z-index: 99;
-    
-}
-
-.encabezadoLogin::before{
-    content: "";
-    position: absolute; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%), url("../imagenes/login.jpg");
-    background-size: cover;
-    z-index: -1;
-}
-
-.wrapper{
-    position: relative;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-   
-.wrapper .form-box{
-    width: 100%;
-    padding: 40px;
-}
-
-.form-box h2 {
-    font-size: 2em;
-    color: #162938;
-    text-align: center;
-}
-
-.input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #162938;
-    margin: 30px 0;
-}
-
-.input-box label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: #162938;
-    font-weight: 500;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.input-box input:focus~label,
-.input-box input:valid~label{
-    top: -5px;
-}
-
-
-
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-}
-
-.input-box .icon{
-    position: absolute;
-    right: 8px;
-    font-size: 1.2em;
-    color: #162938;
-    line-height: 57px;
-
-}
-
-
-
-
-/* 14:07 */
-
-/*.bodylogin{
-    margin: 0;
-    padding: 0 ;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url("../Imagenes/login.jpg") no-repeat;
-
-}
-
-.encabezadoLogin{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-}
-
-.menu_titlelogin{
-    font-size: 2em;
-    color: #fff ;
-    user-select: none;
-}
-
-.menuLogin a {
-    position: relative;
-    font-size: 1.1em;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
-}
-
-/*.menuLogin a::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .5s;
-}
-
-.menuLogin a:hover::after{
-    transform-origin: left;
-    transform: scaleX(1);
-}
-
-.menuLogin .btnLogin-popup{
-    width: 130px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: .5s;
-}
-
-.menuLogin .btnLogin-popup :hover{
-    background: #fff;
-    color: #162938;
-}*/
-
-/*.piefinallogin{
-    background-color: #1D293F;
-}
-
-.piefinallogin_container{
-    --padding-container: 30px 0;
-    text-align: center;
-    color: #fff;
-}
-
-.piefinallogin_copyright{
-    font-weight: 300;
-}
-
-.piefinallogin_icons{
-    margin-bottom: 10px;
-}
-
-.piefinallogin_img{
-    width: 30px;
-}*/
-
-.encabezadoContLum {
+.encabezadoNosotros {
     width: 100%;
     height: 70vh;
     min-height: 600px;
@@ -555,9 +219,9 @@ renombro lo que en particular quiero cambiar */
     justify-content: center;
     grid-template-rows: 100px 1fr;
     color: rgb(255, 240, 250);
-  }
-  
-  .encabezadoContLum::before {
+}
+
+.encabezadoNosotros::before {
     content: "";
     position: absolute;
     top: 0;
@@ -565,8 +229,225 @@ renombro lo que en particular quiero cambiar */
     width: 100%;
     height: 100%;
     background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
-      url("../imagenes/contaminacion-luminica-chile-recomiendo-pirque.jpg");
+        url("../imagenes/nosotros.jpg");
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 100%, 50% 62%, 0 100%, 0 0);
+    z-index: -1;
+}
+
+
+/*00000000000000000000000000 Fin nosotros 000000000000000000000000000000000*/
+
+/*00000000000000000000000000 Inicio noticias 000000000000000000000000000000*/
+.encabezadoNoticias {
+    width: 100%;
+    height: 70vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 240, 250);
+}
+
+.encabezadoNoticias::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
+        url("../imagenes/noticias.jpg");
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
-  }
+}
+ 
+.card-img-top{
+    width: 100%;
+    height: 350px;
+}
+
+
+/*00000000000000000000000000 Fin noticias 000000000000000000000000000000*/
+.encabezadoAstronomia {
+    width: 100%;
+    height: 70vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 240, 250);
+}
+
+.encabezadoAstronomia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
+        url("../imagenes/astronomia.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+ 
+/*----------------------------------inicias sesion----------------------------------------*/
+
+
+.box{
+    background-image: url("../imagenes/noticias.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;   
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.iniciosesion{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+
+span{
+    color: #fff;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+header {
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+
+}
+.input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #f5eded;
+    padding: 0 0 0 45px;
+    background: rgba(255,255,255,0.1);
+}
+
+i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover{
+    box-shadow: 1px 5px 7 1px rgba(0,0,0,0.2);
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.left{
+    display: flex;
+}
+
+label  a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+/*----------------------------------registro ---------------------------------------*/
+
+.form-register{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-block-end: 100px; /*me da espacio paraabajo*/
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom:16px;
+    border: 1px solid #1F53c5;
+    font-size: 18px;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form-register a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.form-register .botons{
+    width: 100%;
+    background: #f83a00;
+    border: none;
+    padding: 12px;
+    color: #fcfcfc;
+    margin: 16px 0;
+    font-size: 16px;
+}

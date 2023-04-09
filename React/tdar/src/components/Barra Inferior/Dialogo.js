@@ -10,7 +10,7 @@ const Dialogo = (props) => {
   ];
 
   return (
-    <Container className="bg-secondary p-4 contDialogo">
+    <Container className="bg-secondary contDialogo">
       <p>{dialogos[nivel]}</p>
     </Container>
   );

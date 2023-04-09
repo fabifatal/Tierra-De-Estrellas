@@ -23,7 +23,7 @@ const AstronomiaPages = () => {
                             <br />
                             <strong>Son cuerpos celestes:</strong> planetas, estrellas, constelaciones ,nebulosas, satélites naturales,cometas y meteoros.
                             <br />
-                            Para poder saber mas del tema accede a este link <code>"https://www.ecologiaverde.com/que-es-un-cuerpo-celeste-definicion-y-tipos-4163.html"</code>
+                            Para poder saber mas del tema <a href="https://www.ecologiaverde.com/que-es-un-cuerpo-celeste-definicion-y-tipos-4163.html">"Pincha aqui"</a>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ const AstronomiaPages = () => {
                             <br />
                             <strong>Tipos de galaxias </strong>Elípticas, Espiral e Irregulares
                             <br />
-                            Para poder saber mas del tema accede a este link <code>https://spaceplace.nasa.gov/galaxy/sp/#:~:text=Una%20galaxia%20es%20un%20conjunto,negro%20supermasivo%20en%20el%20medio.</code>
+                            Para poder saber mas del tema <a href="https://spaceplace.nasa.gov/galaxy/sp/#:~:text=Una%20galaxia%20es%20un%20conjunto,negro%20supermasivo%20en%20el%20medio">"Pincha aqui"</a>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const AstronomiaPages = () => {
                         <div class="accordion-body">
                             La Vía Láctea es una galaxia, un enorme conjunto de polvo, gas y estrellas, incluyendo nuestro sol. La Tierra está situada dentro de esta galaxia, por lo que conocemos a la Vía Láctea como "nuestra" galaxia
                             <br />
-                            Para poder saber mas del tema accede a este link <code>https://www.nationalgeographic.com.es/ciencia/actualidad/cosas-que-sabias-sobre-via-lactea_12295</code>
+                            Para poder saber mas del tema <a href="https://www.nationalgeographic.com.es/ciencia/actualidad/cosas-que-sabias-sobre-via-lactea_12295">"Pincha aqui"</a>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const AstronomiaPages = () => {
                             <br />
                             <strong>Nuestro sistema solar está formado por</strong> el sol, 8 planetas (mercurio, venus, tierra, marte, júpiter, saturno, urano, neptuno), 5 planetas enanos (Plutón, eris, makemake,ceres, haumea) y un montón de asteroides y cometas.
                             <br />
-                            Para poder saber mas del tema accede a este link <code>https://www.nationalgeographic.com.es/ciencia/sistema-solar-que-es-como-se-formo-y-datos-principales_18430</code>
+                            Para poder saber mas del tema <a href="https://www.nationalgeographic.com.es/ciencia/sistema-solar-que-es-como-se-formo-y-datos-principales_18430">"Pincha aqui"</a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ const AstronomiaPages = () => {
                             <br />
                             <strong>Algunos tipos de estrellas son:</strong> enanas blancas, enanas marrones, gigantes rojas, supergigantes azules, estrellas de neutrones , supernovas.
                             <br />
-                            Para poder saber mas del tema accede a este link <code>https://www.nationalgeographicla.com/espacio/2019/07/todo-lo-que-querias-saber-sobre-las-estrellas</code>
+                            Para poder saber mas del tema <a href="https://www.nationalgeographicla.com/espacio/2019/07/todo-lo-que-querias-saber-sobre-las-estrellas">"Pincha aqui"</a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@ const AstronomiaPages = () => {
                             <br />
                             <strong>Por ejemplo:</strong> la Luna es un satélite natural de la Tierra.
                             <br />
-                            Para poder saber mas del tema accede a este link <code>https://elgranobservatorio.com/satelites-planetas/</code>
+                            Para poder saber mas del tema <a href="https://elgranobservatorio.com/satelites-planetas/">"Pincha aqui"</a>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@ const AstronomiaPages = () => {
                             Estas nebulosas son mucho más pequeñas y menos brillantes. Su nombre puede llevar a confusión, ya que la única relación con los planetas es que a través del telescopio suelen verse con formas redondas y de pequeño tamaño, siendo similares a un planeta.
                             Ejemplos  La nebulosa del ojo de gato, la del esquimal, la hélice,  M57 la Nebulosa del Anillo
                             <br />
-                            Para poder saber mas del tema accede a este link<code>https://spaceplace.nasa.gov/nebula/sp/#:~:text=formarse%20nuevas%20estrellas.-,Una%20nebulosa%20es%20una%20nube%20gigante%20de%20polvo%20y%20gas,comienzan%20a%20formarse%20nuevas%20estrellas.</code>
+                            Para poder saber mas del tema <a href="https://spaceplace.nasa.gov/nebula/sp/#:~:text=formarse%20nuevas%20estrellas.-,Una%20nebulosa%20es%20una%20nube%20gigante%20de%20polvo%20y%20gas,comienzan%20a%20formarse%20nuevas%20estrellas">"Pincha aqui"</a>
                         </div>
                     </div>
                 </div>
@@ -165,7 +165,7 @@ const AstronomiaPages = () => {
                             <br />
                             -Planetas exteriores: Los que se encuentran después del cinturón de asteroides como Júpiter, SAturno, Urano, Neptuno y plutón
                             <br />
-                            Para poder saber mas del tema accede a este link <code>https://www.astromia.com/solar/planetas.htm</code>
+                            Para poder saber mas del tema <a href="https://www.astromia.com/solar/planetas.htm">"Pincha aqui"</a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +194,7 @@ const AstronomiaPages = () => {
                             <br />
                             <strong>6- Los asteroides Atón:</strong> Aquellos que cruzan, de manera parcial, la órbita de la Tierra.
                             <br />
-                            Para poder saber mas del tema accede a este link<code>https://spaceplace.nasa.gov/asteroid/sp/</code>
+                            Para poder saber mas del tema <a href="https://spaceplace.nasa.gov/asteroid/sp/">"Pincha aqui"</a>
                         </div>
                     </div>
                 </div>
@@ -216,8 +216,8 @@ const AstronomiaPages = () => {
                             -Cometas medianos: Entre 3 y 6 kilómetros de diámetro.
                             -Cometas grandes: Entre 6 y 10 kilómetros de diámetro.
                             -Cometas gigantes: Entre 10 y 50 kilómetros de diámetro.
-
-                            Para poder saber mas del tema accede a este link <code>https://www.sea-astronomia.es/glosario/cometa#:~:text=Los%20cometas%20(del%20griego%20kometes,%C2%ABbolas%20de%20hielo%20sucio%C2%BB.</code>
+                            <br/>
+                            Para poder saber mas del tema <a href="https://www.sea-astronomia.es/glosario/cometa#:~:text=Los%20cometas%20(del%20griego%20kometes,%C2%ABbolas%20de%20hielo%20sucio%C2%BB.">"Pincha aqui"</a>
                         </div>
                     </div>
                 </div>
@@ -239,7 +239,7 @@ const AstronomiaPages = () => {
                             <strong>Meteoro:</strong>
                             es el fenómeno luminoso que se produce por la ionización del aire cuando los meteoroides son atraídos por la gravedad terrestre y entran en contacto con la atmósfera. El fenómeno también se conoce como “estrella fugaz”.
                             <br />
-                            Para poder saber mas del tema accede a este link<code>https://www.nationalgeographic.es/espacio/meteoroides-meteoros-y-meteoritos#:~:text=Los%20meteoritos%20son%20meteoroides%20que,en%20contacto%20con%20la%20atm%C3%B3sfera.</code>
+                            Para poder saber mas del tema <a href="https://www.nationalgeographic.es/espacio/meteoroides-meteoros-y-meteoritos#:~:text=Los%20meteoritos%20son%20meteoroides%20que,en%20contacto%20con%20la%20atm%C3%B3sfera.">"Pincha aqui"</a>
                         </div>
                     </div>
                 </div>
@@ -262,7 +262,8 @@ const AstronomiaPages = () => {
                             <br />
                             Durante un eclipse lunar, la Tierra impide que la luz del sol llegue hasta la luna. Eso quiere decir que a la noche, la luna llena desaparece por completo, a medida que la sombra de la Tierra la cubre.
                             <br />
-                            Para poder saber mas del tema accede a este link <code>https://spaceplace.nasa.gov/eclipses/sp/#:~:text=Un%20eclipse%20se%20produce%20cuando,eclipses%20solares%20y%20eclipses%20lunares.</code>
+                            Para poder saber mas del tema <a href="https://spaceplace.nasa.gov/eclipses/sp/#:~:text=Un%20eclipse%20se%20produce%20cuando,eclipses%20solares%20y%20eclipses%20lunares.">"Pincha aqui"</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -287,7 +288,8 @@ const AstronomiaPages = () => {
                             <br />
                             Crux, Triangulum Australe, Coma Berenices, Columba, Apus, Chamaeleon, Dorado, Grus, Hydrus, Indus, Musca, Pavo, Phoenix, Tucana, Volans, Camelopardalis, Monoceros, Canes Venatici, Lacerta, Leo Minor, Lynx, Scutum, Sextans, Vulpecula, Antlia, Caelum, Carina, Circinus, Fornax, Horologium, Mensa, Microscopium, Norma, Octans, Pictor, Puppis, Pyxis, Reticulum, Sculptor, Telescopium, Vela.
                             <br /> 
-                            Para poder saber mas del tema accede a este link <code>https://www.planetario.net/constelaciones/</code>
+                            Para poder saber mas del tema <a href="https://www.planetario.net/constelaciones/">"Pincha aqui"</a>
+                            
                         </div>
                     </div>
                 </div>

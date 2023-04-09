@@ -7,15 +7,11 @@ import NavMenu from "../components/NavMenu";
 
 const JuegoPage = () => {
   return (
-    <div className="bg-dark">
-      <Container>
-        <NavMenu />
-        <div className="contJuego">
-          <MapaNocturno />
-          <BarraInferior />
-        </div>
-      </Container>
-    </div>
+    <Container>
+      <NavMenu />
+      <MapaNocturno />
+      <BarraInferior />
+    </Container>
   );
 };
 

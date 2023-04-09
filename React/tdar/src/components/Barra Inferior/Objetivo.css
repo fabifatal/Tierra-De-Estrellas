@@ -1,8 +1,24 @@
 .contObjetivo {
+  align-items: center;
+  display: flex;
   border: 3px solid white;
   border-radius: 32px;
+  padding: 1vh;
+}
+
+.contObjetivo img {
+  border-radius: 32px;
+  height: 15vh;
 }
 
 .contObjetivo h3 {
   font-size: larger;
+}
+
+@media all and (max-height: 600px) {
+  .contObjetivo {
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+  }
 }

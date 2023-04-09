@@ -7,6 +7,7 @@ import noticia2 from "../imagenes/noticias2profemaza.jpg"
 import noticia3 from "../imagenes/noticia3observaabierto.jpg"
 import noticia4 from "../imagenes/noticia4cata.jpg"
 
+
 const NoticiasPages = () => {
     return (
         <div className="NoticiasGeneral">
@@ -20,7 +21,7 @@ const NoticiasPages = () => {
                     <div class="card">
                         <img src= {noticia1} class="card-img-top" alt="..." />
                         <div class="card-body">
-                            <h5 class="card-title">El impresionante museo de la luna llega a Chile</h5>
+                            <h5 class="card-title"><strong>El impresionante museo de la luna llega a Chile</strong></h5>
                             <p class="card-text">Ahí podrás ver una réplica en 3D de la Luna, de siete metros de diámetro, con increíbles detalles de sus cráteres y valles, y que es parte de un espectáculo que también incluye música en vivo.</p>
                         </div>
                     </div>
@@ -29,8 +30,8 @@ const NoticiasPages = () => {
                     <div class="card">
                         <img src= {noticia2} class="card-img-top" alt="..." />
                         <div class="card-body">
-                            <h5 class="card-title">Semana de la astronomia</h5>
-                            <p class="card-text">Charla abierta con el profesor Jose Maza</p>
+                            <h5 class="card-title"><strong>Semana de la astronomía</strong></h5>
+                            <p class="card-text">Charla abierta con el profesor Jose Maza en la explanda de Plaza de Maipú</p>
                         </div>
                     </div>
                 </div>
@@ -38,8 +39,8 @@ const NoticiasPages = () => {
                     <div class="card">
                         <img src= {noticia3} class="card-img-top" alt="..." />
                         <div class="card-body">
-                            <h5 class="card-title">Puertas abiertas</h5>
-                            <p class="card-text">El dia viernes tanto tenran las puertas de la casa abierta el obserbatorio eso alma</p>
+                            <h5 class="card-title"><strong>Puertas abiertas</strong></h5>
+                            <p class="card-text">El dia viernes tanto tendrán las puertas de la casa abierta el observatorio eso alma</p>
                         </div>
                     </div>
                 </div>
@@ -47,8 +48,8 @@ const NoticiasPages = () => {
                     <div class="card">
                         <img src= {noticia4} class="card-img-top" alt="..." />
                         <div class="card-body">
-                            <h5 class="card-title">Actividad dia de la astronomia</h5>
-                            <p class="card-text">Este fin de semanapodras obserbar gratis el universo desde el observatorio manuel foster.</p>
+                            <h5 class="card-title"><strong>Actividad dia de la astronomía</strong></h5>
+                            <p class="card-text"> Este fin de semana podrás observar gratis el universo desde el observatorio Manuel Foster.</p>
                         </div>
                     </div>
                 </div>

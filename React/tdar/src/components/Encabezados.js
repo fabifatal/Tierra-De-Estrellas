@@ -1,24 +1,22 @@
 import React from "react";
-import { Container, Image } from "react-bootstrap";
-import imgInicio from "../imagenes/Inicio.jpg";
 
 const EncabezadoInicio = () => {
-    return (
+  return (
     <div className="encabezado text-center">
-        <div className="encabezado_container contenedor">
-            <h1 className="encabezado_title">Aprende jugando</h1>
-            <p className="encabezado_paragraph">¿Quieres saber cuanto afecta la Contaminacion Luminica a la astronomia en Chile?</p>
-            <a href="#"><button type="button" className="btn btn-info">Juega y Aprende</button></a>
-        </div>
+      <div className="encabezado_container contenedor">
+        <h1 className="encabezado_title">Aprende jugando</h1>
+        <p className="encabezado_paragraph">¿Quieres saber cuánto afecta la Contaminación Lumínica a la astronomía en Chile?</p>
+        <a href="#"><button type="button" className="btn btn-info">Juega y Aprende</button></a>
+      </div>
     </div>
-    )
+  )
 }
 const EncabezadoNosotros = () => {
   return (
     <div className="encabezadoNosotros">
       <div className="encabezado_container container">
         <h1 className="encabezado_title">Nosotros</h1>
-        <p className="encabezado_paragraph">Conoce quienes estan detras</p>
+        <p className="encabezado_paragraph">Nuestro equipo está formado por personas con diferentes orígenes y habilidades, pero con un propósito en común: difundir la fascinante belleza del universo y concientizar sobre la importancia de proteger nuestro cielo nocturno.</p>
       </div>
     </div>
   );
@@ -29,7 +27,9 @@ const EncabezadoNoticias = () => {
       <div className="encabezado_container container">
         <h1 className="encabezado_title">Noticias</h1>
         <p className="encabezado_paragraph">
-          Enterate de las novedades que hay sobre la astronomia
+        Descubrimientos cósmicos:
+        <br/>
+        Lo último en noticias de astronomía que desafían nuestra comprensión del universo.
         </p>
       </div>
     </div>
@@ -38,24 +38,13 @@ const EncabezadoNoticias = () => {
 
 const EncabezadoAstronomia = () => {
   return (
-    <div className="encabezadoNoticias">
+    <div className="encabezadoAstronomia">
       <div className="encabezado_container container">
         <h1 className="encabezado_title">Conceptos</h1>
         <p className="encabezado_paragraph">
-          Conoce mas sobre temas generales de astronomia{" "}
-        </p>
-      </div>
-    </div>
-  );
-};
-
-const EncabezadoContLum = () => {
-  return (
-    <div className="encabezadoContLum">
-      <div className="encabezado_container container">
-        <h1 className="encabezado_title">Contaminacion Luminica</h1>
-        <p className="encabezado_paragraph">
-          Te invito a saber sobre la Contaminacion Luminica{" "}
+        Explorando los misterios del universo: 
+        <br/>
+        Conceptos fundamentales de astronomía para comprender el cosmos.
         </p>
       </div>
     </div>
@@ -67,5 +56,4 @@ export {
   EncabezadoNosotros,
   EncabezadoNoticias,
   EncabezadoAstronomia,
-  EncabezadoContLum,
 };

@@ -2,19 +2,18 @@
   display: flex;
   justify-content: center;
   position: relative;
-
 }
 
-.tamanio {
-  height: 550px;
+ .tamanioMapa {
+  height: 70vh;
   width: 100%;
 }
 
-@media all and (max-height: 600px){
-  .tamanio{
-    height: 200px;
+/* @media all and (max-height: 600px){
+  .tamanioMapa{
+    height: 400px;
   }
-}
+}  */
 
 @keyframes opacityChanger {
   0% {
@@ -55,7 +54,7 @@
 .imgMapa {
   width: 100%;
   position: relative;
-  object-fit: cover;
+  /* object-fit: cover; */
   border: 3px solid white;
   border-radius: 32px;
 }
