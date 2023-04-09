@@ -32,7 +32,7 @@ const FormCoordenadas = (props) => {
           <label>Y</label>
           <input type="number" onChange={yHandler}/>
         </div>
-        <Button type="submit">Enviar</Button>
+        <Button size="sm" type="submit">Enviar</Button>
       </form>
     </div>
   );
