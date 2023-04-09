@@ -6,7 +6,7 @@ import NosotrosPages from './pages/NosotrosPages';
 import NoticiasPages from './pages/NoticiasPages';
 import AstronomiaPages from './pages/AstronomiaPages';
 import JuegoPage from './pages/JuegoPage';
-
+import ContaminacionLuminica from './pages/ContaminacionLuminicaPage';
 
 
 const App = () => {
@@ -18,6 +18,7 @@ const App = () => {
         <Route path="/Noticias" element={<NoticiasPages/>}></Route>
         <Route path="/Astronomia" element={<AstronomiaPages/>}></Route>
         <Route path="/Juego" element={<JuegoPage />}></Route>
+        <Route path="/ContaminacionLuminica" element={<ContaminacionLuminica/>}></Route>
 
       
       
