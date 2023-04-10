@@ -1,0 +1,26 @@
+.contJuegoCont {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 300px;
+    width: 100%;
+  }
+  
+  .contLuminaria {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+  }
+  
+  .luminaria {
+    position: relative;
+    object-fit: cover;
+  }
+
+  .luminariaSinLuz {
+    position: absolute;
+    object-fit: cover;
+  }
+ 
+  

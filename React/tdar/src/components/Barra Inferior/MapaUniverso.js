@@ -1,7 +1,6 @@
 import React from "react";
 import "./MapaUniverso.css";
 import mapa from "../../imagenes/img-juego/mapa1.jpg";
-import { Container, Image } from "react-bootstrap";
 
 const MapaNocturno = () => {
   return (

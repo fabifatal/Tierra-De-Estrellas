@@ -2,26 +2,27 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  border: 3px solid white;
-  border-radius: 32px;
-  padding: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
-.formCoordenadas form{
+.formCoordenadas form {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
   gap: 1vh;
 }
 
-.formCoordenadas input{
-    min-width: 8vh;
-    width: 20%;
-    margin-top: 5%;
-    border-radius: 5px;
+.formCoordenadas input {
+  min-width: 6vh;
+  width: 20%;
+  margin-top: 3%;
+  border-radius: 5px;
 }
 
-.formCoordenadas h3{
+.formCoordenadas h3 {
   font-size: larger;
 }
 
@@ -30,7 +31,3 @@
   align-items: baseline;
   gap: 10px;
 }
-
-@media all and (max-height: 600px){
-
-} 
