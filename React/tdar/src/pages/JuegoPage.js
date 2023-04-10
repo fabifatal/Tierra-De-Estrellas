@@ -7,7 +7,7 @@ import NavMenu from "../components/NavMenu";
 import JuegoContModal from "../components/juegocontaminacion/JuegoContModal";
 
 const JuegoPage = () => {
-  const [modalShow, setModalShow] = useState(false);
+  const [modalShow, setModalShow] = useState(true);
 
   setTimeout(() => {
     setModalShow(true)

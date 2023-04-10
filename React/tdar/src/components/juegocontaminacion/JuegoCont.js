@@ -7,17 +7,55 @@ import {
   Row,
   Image,
 } from "react-bootstrap";
+
+import "./JuegoCont.css";
+
 import lumUp from "../../imagenes/img-juego/2x/Lum Up.png";
 import lum45Up from "../../imagenes/img-juego/2x/Lum 45 Up.png";
 import lum90 from "../../imagenes/img-juego/2x/Lum 90.png";
 import lum45Down from "../../imagenes/img-juego/2x/Lum 45 Down.png";
 import lumDown from "../../imagenes/img-juego/2x/Lum Down.png";
 
+import lumFriaUp from "../../imagenes/img-juego/2x/Fria_Lum Up.png";
+import lumFria45Up from "../../imagenes/img-juego/2x/Fria_Lum 45 Up.png";
+import lumFria90 from "../../imagenes/img-juego/2x/Fria_Lum 90.png";
+import lumFria45Down from "../../imagenes/img-juego/2x/Fria_Lum 45 Down.png";
+import lumFriaDown from "../../imagenes/img-juego/2x/Fria_Lum Down.png";
+
+import lumUpSinLuz from "../../imagenes/img-juego/2x/SinLuz_Lum Up.png";
+import lum45UpSinLuz from "../../imagenes/img-juego/2x/SinLuz_Lum 45 Up.png";
+import lum90SinLuz from "../../imagenes/img-juego/2x/SinLuz_Lum 90.png";
+import lum45DownSinLuz from "../../imagenes/img-juego/2x/SinLuz_Lum 45 Down.png";
+import lumDownSinLuz from "../../imagenes/img-juego/2x/SinLuz_Lum Down.png";
+
 const JuegoCont = () => {
   const [opcionLum, setOpcionLum] = useState(2);
   const [opacidad, setOpacidad] = useState(100);
+  const [colorLuz, setColorLuz] = useState(false);
 
-  const luminarias = [lumDown, lum45Down, lum90, lum45Up, lumUp];
+  const luminariasCalidas = [lumDown, lum45Down, lum90, lum45Up, lumUp];
+  const luminariasSinLuz = [
+    lumDownSinLuz,
+    lum45DownSinLuz,
+    lum90SinLuz,
+    lum45UpSinLuz,
+    lumUpSinLuz,
+  ];
+  const luminariasFrias = [
+    lumFriaDown,
+    lumFria45Down,
+    lumFria90,
+    lumFria45Up,
+    lumFriaUp,
+  ];
+
+  let luminarias = [];
+
+  if (colorLuz) {
+    luminarias = luminariasCalidas;
+  } else {
+    luminarias = luminariasFrias;
+  }
 
   const aumOpcion = () => {
     if (opcionLum >= 0 && opcionLum < 4) {
@@ -43,6 +81,14 @@ const JuegoCont = () => {
     }
   };
 
+  const luzFria = () => {
+    setColorLuz(false);
+  };
+
+  const luzCalida = () => {
+    setColorLuz(true);
+  };
+
   return (
     <Container className="bg-primary text-white text-center justify-content-center">
       <Col>
@@ -62,13 +108,26 @@ const JuegoCont = () => {
             - Luz
           </Button>
         </ButtonGroup>
+        <ButtonGroup>
+          <Button onClick={luzFria} variant="secondary">
+            Fria
+          </Button>
+          <Button onClick={luzCalida} variant="secondary">
+            Amarilla
+          </Button>
+        </ButtonGroup>
       </Col>
       <Row>
         <Col className="contLuminaria p-5">
           <Image
             src={luminarias[opcionLum]}
             fluid
-            className={`opacity-${opacidad}`}
+            className={`luminaria opacity-${opacidad}`}
+          />
+          <Image
+            src={luminariasSinLuz[opcionLum]}
+            fluid
+            className="luminariaSinLuz"
           />
         </Col>
       </Row>
