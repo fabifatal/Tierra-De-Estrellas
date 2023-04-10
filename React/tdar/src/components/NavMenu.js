@@ -13,7 +13,7 @@ const NavMenu = () => {
             <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="/Nosotros">Nosotros</Nav.Link>
             <Nav.Link href="/Noticias">Noticias</Nav.Link>
-            <Nav.Link href="/Juego">JUGAR</Nav.Link>
+            <Nav.Link href="/Historia">JUGAR</Nav.Link>
             <Nav.Link href="/InicioSesion">Inicio Sesión</Nav.Link>
             <NavDropdown title="Información" id="basic-nav-dropdown">
               <NavDropdown.Item href="/Astronomia">Astronomía</NavDropdown.Item>

@@ -144,7 +144,13 @@ const HistoriaPages = () => {
                   ></img>
                 </div>
                 <div class="col">
-                  <p>mensaje (ahora es tu turno de proteger los cielos)</p>
+                  <div class="card w-75">
+                    <div class="card-body">
+                      <h5 class="card-title">No más luces innecesarias</h5>
+                      <p class="card-text">Ahora es tu turno de proteger los cielos</p>
+                      <a href="/Juego" class="btn btn-primary" >Juega y aprende más</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -178,7 +184,7 @@ const HistoriaPages = () => {
 
       <Piefinal />
     </div>
-  );
-};
+  )
+}
 
 export default HistoriaPages;
