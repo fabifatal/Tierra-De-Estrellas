@@ -14,9 +14,9 @@
   border-radius: 2em;
 }
 
-@media all and (max-height: 600px){
+/* @media all and (max-height: 600px){
   .contBarra {
     padding: 1.5vh;
     font-size: 0.83rem;
   }
-}
+} */
