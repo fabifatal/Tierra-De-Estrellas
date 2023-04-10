@@ -20,13 +20,21 @@ const Correcto = (props) => {
   ];
   const tituloCorrecto = [
     "2M1207b",
-    "Proyecto Calán-Tololo",
     "Supernova 1987A",
-    " Agujero Negro Supermasivo",
+    "Agujero Negro Supermasivo",
     "Kelu",
+    "Centauri c",
+    "SPT0418-47",
+    "La forma del centro de la Vía Láctea"
   ];
   const descripcionCorrecto = [
     "Fue tomada con uno de los telescopios del VLT en el observatorio Paranal, en abril de 2004. Se trata de un planeta gigante, aproximadamente cinco veces mayor que Júpiter.",
+    "Fue la primera visible a simple vista y su estudio confirmó la teoría de que los elementos como el hierro fueron creados en este tipo de explosiones.",
+    "Gracias a la combinación de imágenes tomadas por varios telescopios Se logró obtener una imagen del agujero negro que se encuentra en la galaxia Messier 87.",
+    "Kelu que en mapudungun significa 'rojo'. Estas enanas se originan como bolas de gas y no tienen la masa necesaria para producir luz por lo que son oscuras.",
+    "En composición es más parecida a nuestro planeta, para detectarlo se utilizaron instrumentos ubicados en La Silla y Paranal.",
+    "Utilizando el telescopio ALMA se descubrió a 12.000 millones de años luz la galaxia más distante de características similares a la Vía Láctea.",
+    "En 2010, los estudios liderados por la astrónoma Manuela Zoccali, del Instituto de Astrofísica UC, mostraron que en realidad tiene forma de X."
   ];
   return (
     <Modal
@@ -41,7 +49,7 @@ const Correcto = (props) => {
       <Modal.Body className="bg-secondary">
         <Image src={imagenes[nivel]} />
         <h4>{tituloCorrecto[nivel]}</h4>
-        <p>{descripcionCorrecto}</p>
+        <p>{descripcionCorrecto[nivel]}</p>
       </Modal.Body>
       <Modal.Footer className="bg-secondary">
         <Button onClick={props.onHide}>Close</Button>

@@ -10,36 +10,40 @@ import Correcto from "./Correcto";
 const BarraInferior = () => {
   const [modalShow, setModalShow] = useState(false);
   const [nivel, setNivel] = useState(0);
-  const correcto = ["4,3", "6,8", "1,9", "3,5", "7,2"];
+  const correcto = ["8,2", "4,3", "5,1", "8,4", "3,3"];
 
   const addInput = (input) => {
     if (correcto[nivel] == input) {
       setModalShow(true);
+      console.log(correcto.length)
+      console.log(nivel)
+      if (nivel >= 0 && nivel+1 < correcto.length)
       setNivel((prevNivel) => prevNivel + 1);
     }
   };
 
   return (
-    <Row className="CardJuego contBarra bg-primary text-white ">
+    <Row className="CardJuego contBarra bg-primary text-white gap-2">
       <Correcto
         nivelActual={nivel}
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
 
-      <Col>
+      <Col className="text-center CardJuego bg-secondary contNivel">
+        <p>nivel</p>
+        <h3>{nivel + 1}</h3>
+      </Col>
+
+      <Col className="CardJuego bg-secondary">
         <Objetivo nivelActual={nivel} />
       </Col>
 
-      <Col className="contNivelYForm">
-        <h3 className="contNivel CardJuego bg-secondary">Nivel {nivel + 1}</h3>
-      </Col>
-
-      <Col>
+      <Col className="CardJuego bg-secondary">
         <FormCoordenadas onRespuesta={addInput} />
       </Col>
 
-      <Col xs={4}>
+      <Col xs={4} className="CardJuego bg-secondary">
         <Dialogo nivelActual={nivel} />
       </Col>
 

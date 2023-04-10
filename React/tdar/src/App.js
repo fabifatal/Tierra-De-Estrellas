@@ -6,9 +6,9 @@ import NosotrosPages from './pages/NosotrosPages';
 import NoticiasPages from './pages/NoticiasPages';
 import AstronomiaPages from './pages/AstronomiaPages';
 import JuegoPage from './pages/JuegoPage';
+import JuegoContPage from './pages/JuegoContPage';
 import InicioSesionPages from './pages/InicioSesionPages';
 import RegistratePage from './pages/RegistratePage';
-import JuegoTamanioPrueba from './pages/JuegoTamanioPrueba';
 import ContaminacionLuminica from './pages/ContaminacionLuminicaPage';
 
 
@@ -22,6 +22,7 @@ const App = () => {
         <Route path="/Noticias" element={<NoticiasPages/>}></Route>
         <Route path="/Astronomia" element={<AstronomiaPages/>}></Route>
         <Route path="/Juego" element={<JuegoPage />}></Route>
+        <Route path="/JuegoContaminacion" element={<JuegoContPage />}></Route>
         <Route path="/InicioSesion" element={<InicioSesionPages />}></Route>
         <Route path="/registrate" element={<RegistratePage />}></Route>
         <Route path="/ContaminacionLuminica" element={<ContaminacionLuminicaPage/>}></Route>
