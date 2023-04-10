@@ -8,7 +8,7 @@ import email from"../imagenes/email.svg"
 
 const Piefinal = () => {
     return (
-        <div className="piefinal">
+        <div className="m-2 piefinal">
             <section className="piefinal_container container">
                 <div clas="piefinal_social">
                     <a href="#" className="piefinal_icons"><img src= {facebook} className="piefinal_img" /></a>
