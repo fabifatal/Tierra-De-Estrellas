@@ -9,7 +9,7 @@ import JuegoPage from './pages/JuegoPage';
 import JuegoContPage from './pages/JuegoContPage';
 import InicioSesionPages from './pages/InicioSesionPages';
 import RegistratePage from './pages/RegistratePage';
-import ContaminacionLuminica from './pages/ContaminacionLuminicaPage';
+import ContaminacionLuminicaPage from './pages/ContaminacionLuminicaPage';
 
 
 
