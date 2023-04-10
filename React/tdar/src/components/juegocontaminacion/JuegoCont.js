@@ -119,16 +119,19 @@ const JuegoCont = () => {
       </Col>
       <Row>
         <Col className="contLuminaria p-5">
-          <Image
-            src={luminarias[opcionLum]}
-            fluid
-            className={`luminaria opacity-${opacidad}`}
-          />
-          <Image
-            src={luminariasSinLuz[opcionLum]}
-            fluid
-            className="luminariaSinLuz"
-          />
+          <Container className="contLuminaria">
+            <Image
+              src={luminarias[opcionLum]}
+              fluid
+              className={`luminaria opacity-${opacidad}`}
+            />
+
+            <Image
+              src={luminariasSinLuz[opcionLum]}
+              fluid
+              className="luminariaSinLuz"
+            />
+          </Container>
         </Col>
       </Row>
     </Container>

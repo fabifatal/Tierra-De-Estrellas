@@ -4,6 +4,7 @@ import JuegoCont from "./JuegoCont";
 import causa1 from "../../imagenes/img-juego/noche1.jpg";
 import causa2 from "../../imagenes/img-juego/noche2.jpg";
 import causa3 from "../../imagenes/img-juego/noche3.jpg";
+import "./JuegoContCarrusel.css"
 
 const JuegoContCarrusel = () => {
   const [index, setIndex] = useState(0);
@@ -12,7 +13,7 @@ const JuegoContCarrusel = () => {
     setIndex(selectedIndex);
   };
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
+    <Carousel className="contCarrusel" activeIndex={index} onSelect={handleSelect} interval={null}>
       <Carousel.Item className="text-center p-5">
         <h3>¿Cómo evitar la contaminación luminíca?</h3>
         <p>
@@ -22,7 +23,7 @@ const JuegoContCarrusel = () => {
         </p>
       </Carousel.Item>
       <Carousel.Item className="text-center p-3">
-        <img src={causa1} />
+        <img  src={causa1} />
         <h1>Mala Iluminación</h1>
         <p>
           Porque las luces iluminan directamente hacia el cielo o al horizonte.
