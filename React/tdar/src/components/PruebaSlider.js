@@ -9,7 +9,7 @@
         changePosition(1);
     });
 
-    buttonBefore.addEventListener('click', ()=>{
+    buttonBefore?.addEventListener('click', ()=>{
         changePosition(-1);
     });
 

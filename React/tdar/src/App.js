@@ -13,9 +13,6 @@ import HistoriaPages from './pages/HistoriaPages';
 
 import ContaminacionLuminicaPage from './pages/ContaminacionLuminicaPage';
 
-
-
-
 const App = () => {
     return (
       <BrowserRouter>

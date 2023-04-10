@@ -2,7 +2,7 @@ import React from "react";
 import Contlum from "../imagenes/contaminacion-luminica88398.jpg"
 import EclipseChile from "../imagenes/eclipse-chile.jpg"
 import NavMenu from "../components/NavMenu";
-import { EncabezadoContaminacion} from "../components/Encabezados";
+import { EncabezadoContaminacion } from "../components/Encabezados";
 import Piefinal from "../components/PieFinal";
 
 const ContaminacionLuminica = () => {
@@ -16,7 +16,7 @@ const ContaminacionLuminica = () => {
       <div class="card-body">
         <h2 class="card-title">¿QUÉ ES LA CONTAMINACIÓN LUMÍNICA?</h2>
         <p class="card-text">La contaminación lumínica es la emisión excesiva o ineficiente de luz artificial en exteriores, alterando la oscuridad natural de la noche con efectos negativos en la salud y la vida de los seres vivos. Es un problema global que desperdicia luz y afecta la economía, el medio ambiente y la astronomía. Es vital reducir la emisión de luz artificial para proteger los cielos nocturnos.</p>
-        <h5 class="card-title">Visita la página del Ministerio del Medio Ambiente para más información sobre la Contaminación Lumínica. 
+        <h5 class="card-title">Visita la página del Ministerio del Medio Ambiente para más información sobre la Contaminación Lumínica.
           <a href="https://luminica.mma.gob.cl/" class="btn btn-primary">Pincha Aquí</a>
         </h5>
       </div>

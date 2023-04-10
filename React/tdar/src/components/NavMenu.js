@@ -1,6 +1,4 @@
 import React from "react";
-import x from "../imagenes/close.svg";
-import menu from "../imagenes/menu.svg";
 import { Container , Navbar , Nav , NavDropdown} from "react-bootstrap";
 
 
