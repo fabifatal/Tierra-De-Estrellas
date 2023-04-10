@@ -11,13 +11,11 @@ import {
 import JuegoCont from "./JuegoCont";
 import JuegoContCarrusel from "./JuegoContCarrusel";
 
-
 const JuegoContModal = (props) => {
-  
-
   return (
     <Modal
-      className="modCorrecto text-white"
+      fullscreen={true}
+      className="text-white"
       {...props}
       aria-labelledby="contained-modal-title-vcenter"
       centered
@@ -26,7 +24,7 @@ const JuegoContModal = (props) => {
         ¡Hay mucha luz! Es hora de ser EFICIENTES
       </Modal.Header>
       <Modal.Body className="bg-secondary">
-        <JuegoContCarrusel/>
+        <JuegoContCarrusel />
       </Modal.Body>
       <Modal.Footer className="bg-secondary">
         <Button onClick={props.onHide}>Close</Button>

@@ -9,16 +9,18 @@
   .contLuminaria {
     display: flex;
     justify-content: center;
-    height: 300px;
-    width: 100%;
+    align-items: center;
+
   }
   
   .luminaria {
+    margin: 0 auto;
     position: relative;
     object-fit: cover;
   }
 
   .luminariaSinLuz {
+    margin: 0 auto;
     position: absolute;
     object-fit: cover;
   }
