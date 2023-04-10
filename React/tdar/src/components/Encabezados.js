@@ -6,7 +6,7 @@ const EncabezadoInicio = () => {
       <div className="encabezado_container contenedor">
         <h1 className="encabezado_title">Aprende jugando</h1>
         <p className="encabezado_paragraph">¿Quieres saber cuánto afecta la Contaminación Lumínica a la astronomía en Chile?</p>
-        <a href="#"><button type="button" className="btn btn-info">Juega y Aprende</button></a>
+        <a href="/Juego"><button type="button" className="btn btn-info">Juega y Aprende</button></a>
       </div>
     </div>
   )
