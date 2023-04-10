@@ -475,8 +475,8 @@ label  a{
     width: 100%;
     height: 100%;
     background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
-        url("../imagenes/nosotros.jpg");
+        url("../imagenes/contaminacion-luminica-chile-recomiendo-pirque.jpg");
     background-size: cover;
-    clip-path: polygon(100% 0, 100% 100%, 50% 62%, 0 100%, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
 }
