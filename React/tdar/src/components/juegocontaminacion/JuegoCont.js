@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Container,
   Col,
@@ -9,117 +9,174 @@ import {
 } from "react-bootstrap";
 
 import "./JuegoCont.css";
+import flechaizq from "../../imagenes/img-juego/circulo-de-flecha-izq.png";
+import flechader from "../../imagenes/img-juego/circulo-de-flecha-der.png";
 
-import lumUp from "../../imagenes/img-juego/2x/Lum Up.png";
-import lum45Up from "../../imagenes/img-juego/2x/Lum 45 Up.png";
-import lum90 from "../../imagenes/img-juego/2x/Lum 90.png";
-import lum45Down from "../../imagenes/img-juego/2x/Lum 45 Down.png";
-import lumDown from "../../imagenes/img-juego/2x/Lum Down.png";
+import lectora from "../../imagenes/img-juego/Lectora.png";
 
-import lumFriaUp from "../../imagenes/img-juego/2x/Fria_Lum Up.png";
-import lumFria45Up from "../../imagenes/img-juego/2x/Fria_Lum 45 Up.png";
-import lumFria90 from "../../imagenes/img-juego/2x/Fria_Lum 90.png";
-import lumFria45Down from "../../imagenes/img-juego/2x/Fria_Lum 45 Down.png";
-import lumFriaDown from "../../imagenes/img-juego/2x/Fria_Lum Down.png";
-
-import lumUpSinLuz from "../../imagenes/img-juego/2x/SinLuz_Lum Up.png";
-import lum45UpSinLuz from "../../imagenes/img-juego/2x/SinLuz_Lum 45 Up.png";
-import lum90SinLuz from "../../imagenes/img-juego/2x/SinLuz_Lum 90.png";
-import lum45DownSinLuz from "../../imagenes/img-juego/2x/SinLuz_Lum 45 Down.png";
-import lumDownSinLuz from "../../imagenes/img-juego/2x/SinLuz_Lum Down.png";
+import lumUp from "../../imagenes/img-juego/Luminarias/Lum Up.png";
+import lumDown from "../../imagenes/img-juego/Luminarias/Lum Down.png";
+import lum90I from "../../imagenes/img-juego/Luminarias/Lum 90 Izq.png";
+import lum90D from "../../imagenes/img-juego/Luminarias/Lum 90 Der.png";
+import lum45UpI from "../../imagenes/img-juego/Luminarias/Lum 45 Up Izq.png";
+import lum45UpD from "../../imagenes/img-juego/Luminarias/Lum 45 Up Der.png";
+import lum45DownI from "../../imagenes/img-juego/Luminarias/Lum 45 Down Izq.png";
+import lum45DownD from "../../imagenes/img-juego/Luminarias/Lum 45 Down Der.png";
+import CalLumUp from "../../imagenes/img-juego/Luminarias/Calida Lum Up.png";
+import CalLumDown from "../../imagenes/img-juego/Luminarias/Calida Lum Down.png";
+import CalLum90I from "../../imagenes/img-juego/Luminarias/Calida Lum 90 Izq.png";
+import CalLum90D from "../../imagenes/img-juego/Luminarias/Calida Lum 90 Der.png";
+import CalLum45UpI from "../../imagenes/img-juego/Luminarias/Calida Lum 45 Up Izq.png";
+import CalLum45UpD from "../../imagenes/img-juego/Luminarias/Calida Lum 45 Up Der.png";
+import CalLum45DownI from "../../imagenes/img-juego/Luminarias/Calida Lum 45 Down Izq.png";
+import CalLum45DownD from "../../imagenes/img-juego/Luminarias/Calida Lum 45 Down Der.png";
+import FriaLumUp from "../../imagenes/img-juego/Luminarias/Fria Lum Up.png";
+import FriaLumDown from "../../imagenes/img-juego/Luminarias/Fria Lum Down.png";
+import FriaLum90I from "../../imagenes/img-juego/Luminarias/Fria Lum 90 Izq.png";
+import FriaLum90D from "../../imagenes/img-juego/Luminarias/Fria Lum 90 Der.png";
+import FriaLum45UpI from "../../imagenes/img-juego/Luminarias/Fria Lum 45 Up Izq.png";
+import FriaLum45UpD from "../../imagenes/img-juego/Luminarias/Fria Lum 45 Up Der.png";
+import FriaLum45DownI from "../../imagenes/img-juego/Luminarias/Fria Lum 45 Down Izq.png";
+import FriaLum45DownD from "../../imagenes/img-juego/Luminarias/Fria Lum 45 Down Der.png";
 
 const JuegoCont = () => {
-  const [opcionLum, setOpcionLum] = useState(2);
+  const [opcionLum, setOpcionLum] = useState(4);
   const [opacidad, setOpacidad] = useState(100);
   const [colorLuz, setColorLuz] = useState(false);
+  const [orientacion, setOrientacion] = useState(0);
+  const [posicion, setPosicion] = useState("center");
+  const [nivelContaminacion, setNivelContaminacion] = useState(4);
 
-  const luminariasCalidas = [lumDown, lum45Down, lum90, lum45Up, lumUp];
-  const luminariasSinLuz = [
-    lumDownSinLuz,
-    lum45DownSinLuz,
-    lum90SinLuz,
-    lum45UpSinLuz,
-    lumUpSinLuz,
+  const luminariasSinLuzD = [lumDown, lum45DownD, lum90D, lum45UpD, lumUp];
+  const luminariasSinLuzI = [lumDown, lum45DownI, lum90I, lum45UpI, lumUp];
+  const luminariasSinLuz = [luminariasSinLuzD, luminariasSinLuzI];
+
+  const luminariasCalidasD = [
+    CalLumDown,
+    CalLum45DownD,
+    CalLum90D,
+    CalLum45UpD,
+    CalLumUp,
   ];
-  const luminariasFrias = [
-    lumFriaDown,
-    lumFria45Down,
-    lumFria90,
-    lumFria45Up,
-    lumFriaUp,
+  const luminariasCalidasI = [
+    CalLumDown,
+    CalLum45DownI,
+    CalLum90I,
+    CalLum45UpI,
+    CalLumUp,
   ];
+  const luminariasCalidas = [luminariasCalidasD, luminariasCalidasI];
+
+  const luminariasFriasD = [
+    FriaLumDown,
+    FriaLum45DownD,
+    FriaLum90D,
+    FriaLum45UpD,
+    FriaLumUp,
+  ];
+  const luminariasFriasI = [
+    FriaLumDown,
+    FriaLum45DownI,
+    FriaLum90I,
+    FriaLum45UpI,
+    FriaLumUp,
+  ];
+  const luminariasFrias = [luminariasFriasD, luminariasFriasI];
 
   let luminarias = [];
 
   if (colorLuz) {
-    luminarias = luminariasCalidas;
+    luminarias = luminariasCalidas[orientacion];
   } else {
-    luminarias = luminariasFrias;
+    luminarias = luminariasFrias[orientacion];
   }
 
-  const aumOpcion = () => {
-    if (opcionLum >= 0 && opcionLum < 4) {
+  const controlOpcion = (up) => {
+    if (up && opcionLum >= 0 && opcionLum < 4) {
       setOpcionLum((prevOpcion) => prevOpcion + 1);
-    }
+    }else if (!up && opcionLum > 0 && opcionLum <= 4){
+      setOpcionLum((prevOpcion) => prevOpcion - 1)
+    } 
   };
 
-  const dimOpcion = () => {
-    if (opcionLum > 0 && opcionLum <= 4) {
-      setOpcionLum((prevOpcion) => prevOpcion - 1);
-    }
-  };
-
-  const aumLuz = () => {
-    if (opacidad >= 0 && opacidad < 100) {
+  const controlLuz = (up) => {
+    if (up && opacidad >= 0 && opacidad < 100) {
       setOpacidad((prevOpacidad) => prevOpacidad + 25);
-    }
-  };
-
-  const dimLuz = () => {
-    if (opacidad > 0 && opacidad <= 100) {
+    }else if (!up && opacidad > 0 && opacidad <= 100){
       setOpacidad((prevOpacidad) => prevOpacidad - 25);
     }
   };
 
-  const luzFria = () => {
-    setColorLuz(false);
-  };
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
 
-  const luzCalida = () => {
-    setColorLuz(true);
-  };
+  const posicionesLectora = ["center","end","start"]
+
+
 
   return (
-    <Container className="bg-primary text-white text-center justify-content-center">
+    <Container className="bg-dark text-white text-center justify-content-center">
       <Col>
+      {nivelContaminacion}
         <ButtonGroup>
-          <Button onClick={aumOpcion} variant="secondary">
+          <Button onClick={() => controlOpcion(true)} variant="secondary">
             Arriba
           </Button>
-          <Button onClick={dimOpcion} variant="secondary">
+          <Button onClick={() => controlOpcion(false)} variant="secondary">
             Abajo
           </Button>
         </ButtonGroup>
         <ButtonGroup>
-          <Button onClick={aumLuz} variant="secondary">
+          <Button onClick={() => controlLuz(true)} variant="secondary">
             + Luz
           </Button>
-          <Button onClick={dimLuz} variant="secondary">
+          <Button onClick={() => controlLuz(false)} variant="secondary">
             - Luz
           </Button>
         </ButtonGroup>
         <ButtonGroup>
-          <Button onClick={luzFria} variant="secondary">
+          <Button onClick={() => setColorLuz(false)} variant="secondary">
             Fria
           </Button>
-          <Button onClick={luzCalida} variant="secondary">
+          <Button onClick={() => setColorLuz(true)} variant="secondary">
             Amarilla
+          </Button>
+        </ButtonGroup>
+        <ButtonGroup>
+          <Button onClick={() => setPosicion("start")} variant="secondary">
+            Izquierda
+          </Button>
+          <Button onClick={() => setPosicion("center")} variant="secondary">
+            Centro
+          </Button>
+          <Button onClick={() => setPosicion("end")} variant="secondary">
+            Derecha
+          </Button>
+        </ButtonGroup>
+        <ButtonGroup>
+          <Button
+            onClick={() => setOrientacion(1)}
+            variant="secondary"
+            className="p-0"
+          >
+            <Image src={flechaizq} className="botonOrientacion" />
+          </Button>
+          <Button
+            onClick={() => setOrientacion(0)}
+            variant="secondary"
+            className="p-0"
+          >
+            <Image src={flechader} className="botonOrientacion" />
           </Button>
         </ButtonGroup>
       </Col>
       <Row>
-        <Col className="contLuminaria p-5">
-          <Container className="contLuminaria">
+        <Col className="contLumLect p-5">
+          <Container className={`contLectora justify-content-${posicionesLectora[1]}`}>
+            <Image src={lectora} fluid className="lectora" />
+          </Container>
+          <Container className={`contLuminaria justify-content-${posicion}`}>
             <Image
               src={luminarias[opcionLum]}
               fluid
@@ -127,9 +184,9 @@ const JuegoCont = () => {
             />
 
             <Image
-              src={luminariasSinLuz[opcionLum]}
+              src={luminariasSinLuz[orientacion][opcionLum]}
               fluid
-              className="luminariaSinLuz"
+              className="luminaria"
             />
           </Container>
         </Col>
