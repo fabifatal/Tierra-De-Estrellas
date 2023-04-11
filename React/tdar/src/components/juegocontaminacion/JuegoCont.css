@@ -5,24 +5,37 @@
     height: 300px;
     width: 100%;
   }
+
+  .contLumLect {
+    height: 65vh;
+    
+  }
   
   .contLuminaria {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    align-items: last baseline;
+    height: 50vh;
   }
   
   .luminaria {
-    margin: 0 auto;
-    position: relative;
-    object-fit: cover;
+    position: absolute;
+    max-height: 60%;
   }
 
-  .luminariaSinLuz {
-    margin: 0 auto;
+  .contLectora{
     position: absolute;
-    object-fit: cover;
+    display: flex;
+    align-items: last baseline;
+    height: 50vh;
+  }
+
+  .lectora {
+    position: absolute;
+    max-height: 55%;
   }
  
+  .botonOrientacion{
+    max-width: 6vh;
+    max-height: 6vh;
+  }
   
