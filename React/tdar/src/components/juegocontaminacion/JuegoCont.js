@@ -114,7 +114,6 @@ const JuegoCont = () => {
   const posicionesLectora = ["center","end","start"]
 
 
-
   return (
     <Container className="bg-dark text-white text-center justify-content-center">
       <Col>
