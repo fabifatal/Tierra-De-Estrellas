@@ -449,3 +449,16 @@ label  a{
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
 }
+
+.imagenCa {
+    width: 60vh;
+    height: 90vh;
+}
+
+.colorCa{
+    background-color: #28878cd7;
+   
+}
+.colorL{
+   background-color:  #1c585ca0;
+}
