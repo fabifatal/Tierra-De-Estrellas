@@ -12,7 +12,7 @@ const HistoriaPages = () => {
 
       <div
         id="carouselExampleFade"
-        className="mt-2 carousel slide carousel-fade"
+        className="mt-2 colorCa carousel slide carousel-fade"
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
@@ -144,9 +144,9 @@ const HistoriaPages = () => {
                   ></img>
                 </div>
                 <div class="col">
-                  <div class="card w-75">
-                    <div class="card-body">
-                      <h5 class="card-title">No más luces innecesarias</h5>
+                  <div class="colorL card w-1075">
+                    <div class="colorL card-body">
+                      <h5 class=" card-title">No más luces innecesarias</h5>
                       <p class="card-text">Ahora es tu turno de proteger los cielos</p>
                       <a href="/Juego" class="btn btn-primary" >Juega y aprende más</a>
                     </div>

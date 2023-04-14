@@ -4,7 +4,7 @@ import ig from "../imagenes/instagrma.svg"
 
 const Piefinal = () => {
     return (
-        <div className="piefinal">
+        <div className="mt-2 piefinal">
             <section className="piefinal_container container">
                 <div clas="piefinal_social">
                     <a href="https://www.facebook.com/profile.php?id=100091783688945" className="piefinal_icons"><img src= {facebook} className="piefinal_img" /></a>
