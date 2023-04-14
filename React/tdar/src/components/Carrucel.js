@@ -1,15 +1,13 @@
 import React from "react";
 import josem from "../imagenes/Josemaza.jpg"
-import tere from "../imagenes/terepaneque.jpg"
-import maria from "../imagenes/mariateresaruiz.jpg"
-import monica from "../imagenes/monicarubio.jpg"
-import izquierda from "../imagenes/leftArrow.svg"
-import derecha from "../imagenes/rightArrow.svg"
-import dani from "../imagenes/dani.jpg"
-import fabi from "../imagenes/Fabi.jpg"
-import cami from "../imagenes/Camila.jpg"
-import javi from "../imagenes/Javi.jpg"
-
+import tere from "../imagenes/teresaa.jpg"
+import maria from "../imagenes/mariaa.jpg"
+import monica from "../imagenes/monicaa.jpg"
+import dani from "../imagenes/daniii.jpeg"
+import fabi from "../imagenes/fabiii.jpeg"
+import cami from "../imagenes/camii.jpeg"
+import javi from "../imagenes/javii.jpeg"
+import diego from "../imagenes/diegoo.jpeg"
 
 const CarrucelInicio = () => {
     return (
@@ -102,7 +100,7 @@ const CarrucelNosotros = () => {
                                 <img className="testimony__img  d-block w-100" src={fabi} alt="..." />
                             </div>
                             <div class="testimony__texts col">
-                                <h2 className="subtitle">Fabián Zúñiga <span className="testimony__course">Desarrollador Full Stack</span></h2>
+                                <h2 className="subtitle">Fabián Zúñiga Pérez <span className="testimony__course">Desarrollador Full Stack</span></h2>
                                 <p>Me interesa seguir aprendiendo sobre programación ya que se ha vuelto una pasión. Me he desenvuelto con facilidad en la comunicación de proyectos y coordinación de equipos. Mi experiencia previa en la gestión musical me ha dado herramientas de trabajo en equipos que me han servido en mi desarrollo profesional.</p>
                             </div>
                         </div>
@@ -146,6 +144,19 @@ const CarrucelNosotros = () => {
                             <div class="col">
                                 <h2 className="subtitle">Javiera Muñoz Velásquez <span className="testimony__course">Desarrolladora Full Stack</span></h2>
                                 <p>Soy una desarrolladora Full Stack Java Junior altamente motivada y comprometida, con una sólida formación académica en Administración de Empresas. Me caracterizo por ser una persona creativa, proactiva y apasionada por la programación. Mis aspiraciones profesionales incluyen continuar mi crecimiento en el mundo de la tecnología y contribuir al éxito de proyectos de manera colaborativa, desarrollando soluciones innovadoras y eficientes que generen valor para los clientes y usuarios</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <div class="container text-center">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <img className="testimony__img d-block w-100" src={diego} alt="..." />
+                            </div>
+                            <div class="col">
+                                <h2 className="subtitle">Diego Álvarez Cisternas <span className="testimony__course">Desarrollador Full Stack</span></h2>
+                                <p>Descripcion</p>
                             </div>
                         </div>
                     </div>

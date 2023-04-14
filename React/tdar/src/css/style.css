@@ -1,26 +1,8 @@
+/*------ Traemos la fuente de letra que usaremos ------*/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap");
 
-:root {
-    --padding-container: 100px 0;
-    --color-title: #001a49;
-}
-
-/* ------------Inicio body general----------------------------------------------*/
-body {
-    font-family: "Roboto", sans-serif;
-}
-
-/*------------ Fin body general-------------------------------------------------*/
-
-/*------------- Inicio encabezado-----------------------------------------------*/
-/*.contenedor {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    /*background-color: black;
-    padding: var(--padding-container);
-}*/
+/*------------- Inicio Encabezado inicio -----------------------------------------------*/
 
 .encabezado {
     width: 100%;
@@ -42,15 +24,128 @@ body {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
-        url("../imagenes/Inicio.jpg");
+        url("../imagenes/inicio.jpeg");
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
 }
 
-/*------------- Fin encabezado-----------------------------------------------*/
+/*------------- Fin Encabezado inicio -----------------------------------------------*/
 
-/*-------------- Inicio texto enmedio del encabezado----------------------*/
+/*------------- Inicio Encabezado Nosotros -----------------------------------------------*/
+.encabezadoNosotros {
+    width: 100%;
+    height: 70vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 240, 250);
+}
+
+.encabezadoNosotros::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
+        url("../imagenes/nosotross.jpg");
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 100%, 50% 62%, 0 100%, 0 0);
+    z-index: -1;
+}
+
+/*------------- Fin Encabezado Nosotros -----------------------------------------------*/
+
+/*------------- Inicio Encabezado Noticias -----------------------------------------------*/
+.encabezadoNoticias {
+    width: 100%;
+    height: 70vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 240, 250);
+}
+
+.encabezadoNoticias::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
+        url("../imagenes/noticias.jpeg");
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+/*------------- Fin Encabezado Noticias -----------------------------------------------*/
+
+/*------------- Inicio Encabezado Astronomia -----------------------------------------------*/
+.encabezadoAstronomia {
+    width: 100%;
+    height: 70vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 240, 250);
+}
+
+.encabezadoAstronomia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
+        url("../imagenes/concept.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+/*------------- Fin Encabezado Astronomia -----------------------------------------------*/
+
+/*------------- Inicio Encabezado Contaminacion Luminica -----------------------------------*/
+.encabezadoContaminacion {
+    width: 100%;
+    height: 70vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 240, 250);
+}
+
+.encabezadoContaminacion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
+        url("../imagenes/contaminacion-luminica-chile-recomiendo-pirque.jpg");
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+
+/*------------- Fin Encabezado contaminacion luminica -----------------------------------------------*/
+
+/*-------------- Inicio Control de lo que esta delante de la imagen encabezado----------------------*/
 
 .encabezado_container {
     max-width: 800px;
@@ -63,16 +158,15 @@ body {
     text-align: center;
 }
 
-/*-------------- Fin texto enmedio del encabezado----------------------*/
+/*-------------- Fin Control de lo que esta delante de la imagen encabezado----------------------*/
 
-/*-------------Inicio texto bajo el contenedor del encabezado----------------*/
+/*-------Inicio Control de lo que esta bajo la imagen encabezado----------*/
 
 .bajoEncabezado {
     text-align: center;
 }
 
 .subtitle {
-    color: var(--color-title);
     font-size: 2rem;
     margin-bottom: 25px;
 }
@@ -89,6 +183,7 @@ body {
     gap: 1em;
     overflow: hidden;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    
 }
 
 .imgComparacion {
@@ -103,9 +198,9 @@ body {
     width: 300px;
 }
 
-/*-------------Fin texto bajo el contenedor del encabezado----------------*/
+/*-------Fin Control de lo que esta bajo la imagen encabezado----------------*/
 
-/*------------- Inicio astronomos/nosotros slide-------------------------*/
+/*------------- Inicio Carrucel astronomos y nosotros -------------------------*/
 
 .testimony{
     background-color: #e5e5f7;
@@ -113,25 +208,6 @@ body {
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
 }
-
-/*.testimony__container{
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    gap: 1em;
-    align-items: center;
-}*/
-
-/*.testimony__body{
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2em;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    opacity: 0;
-    pointer-events: none;
-}*/
 
 .testimony__img{
     height: 500px;
@@ -147,12 +223,12 @@ body {
     padding: 5px;
 }
 
-/*------------- Fin astronomos conocidos slide-------------------------*/
+/*------------- Fin carrucel astronomos y nosotros-------------------------*/
+
 
 /*-------------- Inicio pie de pagina----------------------------------*/
 
 .piefinal {
-    
     background-color: #1D293F;
 }
 
@@ -176,101 +252,20 @@ body {
 
 /*-------------- Fin pie de pagina----------------------------------*/
 
-/*00000000000000000000000000 Inicio nosotros 000000000000000000000000000000000*/
+/*---------------- Inicio Arreglo card noticias----------------------------*/
 
-.encabezadoNosotros {
-    width: 100%;
-    height: 70vh;
-    min-height: 600px;
-    max-height: 800px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    grid-template-rows: 100px 1fr;
-    color: rgb(255, 240, 250);
-}
-
-.encabezadoNosotros::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
-        url("../imagenes/nosotros.jpg");
-    background-size: cover;
-    clip-path: polygon(100% 0, 100% 100%, 50% 62%, 0 100%, 0 0);
-    z-index: -1;
-}
-
-
-/*00000000000000000000000000 Fin nosotros 000000000000000000000000000000000*/
-
-/*00000000000000000000000000 Inicio noticias 000000000000000000000000000000*/
-.encabezadoNoticias {
-    width: 100%;
-    height: 70vh;
-    min-height: 600px;
-    max-height: 800px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    grid-template-rows: 100px 1fr;
-    color: rgb(255, 240, 250);
-}
-
-.encabezadoNoticias::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
-        url("../imagenes/noticias.jpg");
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
-    z-index: -1;
-}
- 
 .card-img-top{
     width: 100%;
     height: 350px;
 }
+/*----------------Fin Arreglo card noticias----------------------------*/
 
-
-/*00000000000000000000000000 Fin noticias 000000000000000000000000000000*/
-.encabezadoAstronomia {
-    width: 100%;
-    height: 70vh;
-    min-height: 600px;
-    max-height: 800px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    grid-template-rows: 100px 1fr;
-    color: rgb(255, 240, 250);
-}
-
-.encabezadoAstronomia::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
-        url("../imagenes/astronomia.jpg");
-    background-size: cover;
-    z-index: -1;
-}
  
-/*----------------------------------inicias sesion----------------------------------------*/
+/*---------------------Inicio inicias sesion----------------------------------------*/
 
 
 .box{
-    background-image: url("../imagenes/noticias.jpg");
+    background-image: url("../imagenes/iniciosesionre.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -368,7 +363,9 @@ label  a{
 
 }
 
-/*----------------------------------registro ---------------------------------------*/
+/*---------------------Fin  inicias sesion----------------------------------------*/
+
+/*----------------------------------Inicio registro -------------------------------*/
 
 .form-register{
     margin: 0;
@@ -420,35 +417,8 @@ label  a{
     margin: 16px 0;
     font-size: 16px;
 }
+/*---------------------------------Fin Inicio registro -------------------------------*/
 
-
-/* ..... encabezado contaminacion luminica .... */
-
-.encabezadoContaminacion {
-    width: 100%;
-    height: 70vh;
-    min-height: 600px;
-    max-height: 800px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    grid-template-rows: 100px 1fr;
-    color: rgb(255, 240, 250);
-}
-
-.encabezadoContaminacion::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #00000020 0%, #00000017 100%),
-        url("../imagenes/contaminacion-luminica-chile-recomiendo-pirque.jpg");
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
-    z-index: -1;
-}
 
 .imagenCa {
     width: 60vh;
