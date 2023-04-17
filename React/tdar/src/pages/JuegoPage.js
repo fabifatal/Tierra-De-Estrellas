@@ -9,9 +9,9 @@ import JuegoContModal from "../components/juegocontaminacion/JuegoContModal";
 const JuegoPage = () => {
   const [modalShow, setModalShow] = useState(false);
 
-  setTimeout(() => {
-    setModalShow(true)
-  }, 120000);
+  // setTimeout(() => {
+  //   setModalShow(true)
+  // }, 120000);
 
   return (
     <Container>
@@ -20,8 +20,8 @@ const JuegoPage = () => {
         onHide={() => setModalShow(false)}
       />
       <NavMenu />
-      <MapaNocturno />
       <BarraInferior />
+      <MapaNocturno />
     </Container>
   );
 };

@@ -45,6 +45,7 @@ const JuegoCont = () => {
   const [colorLuz, setColorLuz] = useState(false);
   const [orientacion, setOrientacion] = useState(0);
   const [posicion, setPosicion] = useState("center");
+  const [posicionLectora, setPosicionLectora] = useState("");
   const [nivelContaminacion, setNivelContaminacion] = useState(4);
 
   const luminariasSinLuzD = [lumDown, lum45DownD, lum90D, lum45UpD, lumUp];
@@ -94,15 +95,15 @@ const JuegoCont = () => {
   const controlOpcion = (up) => {
     if (up && opcionLum >= 0 && opcionLum < 4) {
       setOpcionLum((prevOpcion) => prevOpcion + 1);
-    }else if (!up && opcionLum > 0 && opcionLum <= 4){
-      setOpcionLum((prevOpcion) => prevOpcion - 1)
-    } 
+    } else if (!up && opcionLum > 0 && opcionLum <= 4) {
+      setOpcionLum((prevOpcion) => prevOpcion - 1);
+    }
   };
 
   const controlLuz = (up) => {
     if (up && opacidad >= 0 && opacidad < 100) {
       setOpacidad((prevOpacidad) => prevOpacidad + 25);
-    }else if (!up && opacidad > 0 && opacidad <= 100){
+    } else if (!up && opacidad > 0 && opacidad <= 100) {
       setOpacidad((prevOpacidad) => prevOpacidad - 25);
     }
   };
@@ -110,14 +111,37 @@ const JuegoCont = () => {
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
+  const posicionesLectora = [
+    "center",
+    "end",
+    "start",
+    "center rh",
+    "end rh",
+    "start rh",
+  ];
 
-  const posicionesLectora = ["center","end","start"]
+  useEffect(() => {
+    setPosicionLectora(posicionesLectora[getRandomInt(5)]);
+  }, []);
 
+  useEffect(() => {
+    if (posicionLectora == posicion) {
+      setNivelContaminacion((prev) => prev - 1);
+    }
+    if (opcionLum === 0 || opcionLum === 1) {
+      setNivelContaminacion((prev) => prev - 1);
+    }
+    if (colorLuz) {
+      setNivelContaminacion((prev) => prev - 1);
+    }
+    if (opacidad === 25) {
+      setNivelContaminacion((prev) => prev - 1);
+    }
+  }, [posicion, opcionLum]);
 
   return (
     <Container className="bg-dark text-white text-center justify-content-center">
       <Col>
-      {nivelContaminacion}
         <ButtonGroup>
           <Button onClick={() => controlOpcion(true)} variant="secondary">
             Arriba
@@ -169,10 +193,13 @@ const JuegoCont = () => {
             <Image src={flechader} className="botonOrientacion" />
           </Button>
         </ButtonGroup>
+        <p>Nivel Contaminación: {nivelContaminacion * 25}</p>
       </Col>
       <Row>
-        <Col className="contLumLect p-5">
-          <Container className={`contLectora justify-content-${posicionesLectora[1]}`}>
+        <Col className="contLumLect p-5 container">
+          <Container
+            className={`contLectora justify-content-${posicionLectora}`}
+          >
             <Image src={lectora} fluid className="lectora" />
           </Container>
           <Container className={`contLuminaria justify-content-${posicion}`}>

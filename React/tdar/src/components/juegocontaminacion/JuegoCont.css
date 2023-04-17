@@ -39,3 +39,6 @@
     max-height: 6vh;
   }
   
+  .rh {
+    transform: scaleX(-1);
+  }

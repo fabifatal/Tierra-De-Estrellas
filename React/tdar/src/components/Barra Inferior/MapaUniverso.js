@@ -1,16 +1,17 @@
 import React from "react";
 import "./MapaUniverso.css";
-import mapa from "../../imagenes/img-juego/mapa1.jpg";
+import mapagrande from "../../imagenes/img-juego/eso0116a_El campo profundo Capodimonte.jpg";
+import ScrollContainer from "react-indiana-drag-scroll";
 
 const MapaNocturno = () => {
   return (
-    <div className="contMapa">
-      <div className="contContaminacion tamanioMapa">
-        <div className="contaminacionlum"></div>
-      </div>
-      <div className="contImgMapa tamanioMapa">
-        <img className="bg-img imgMapa" src={mapa} />
-      </div>
+    <div className="contMapa tamanioMapa">
+      <ScrollContainer className="scroll-container">
+        <div>
+          <div className="contaminacionlum"></div>
+          <img className="imgMapa" src={mapagrande} alt="mapa grande" />
+        </div>
+      </ScrollContainer>
     </div>
   );
 };
