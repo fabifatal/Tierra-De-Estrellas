@@ -7,22 +7,21 @@ import NavMenu from "../components/NavMenu";
 import JuegoContModal from "../components/juegocontaminacion/JuegoContModal";
 
 const JuegoPage = () => {
-  const [modalShow, setModalShow] = useState(false);
+  // const [modalShow, setModalShow] = useState(true);
 
   // setTimeout(() => {
   //   setModalShow(true)
   // }, 120000);
 
   return (
-    <Container>
-      <JuegoContModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
-      <NavMenu />
-      <BarraInferior />
-      <MapaNocturno />
-    </Container>
+    <div className="contJuego body-color">
+      <Container>
+        {/* <JuegoContModal show={modalShow} onHide={() => setModalShow(false)} /> */}
+        <NavMenu />
+        <MapaNocturno />
+        <BarraInferior />
+      </Container>
+    </div>
   );
 };
 

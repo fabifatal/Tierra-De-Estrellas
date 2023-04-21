@@ -1,20 +1,4 @@
-.contJuegoCont {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 300px;
-  width: 100%;
-}
+.contPage{
+    height: 100vh;
 
-.contLuminaria {
-  display: flex;
-  justify-content: center;
-  height: 300px;
-  width: 100%;
-}
-
-.luminaria {
-  width: 100%;
-  position: relative;
-  object-fit: cover;
 }

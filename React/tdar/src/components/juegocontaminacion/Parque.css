@@ -1,0 +1,106 @@
+.contenedor-parque {
+  height: 80vh;
+  width: 100%;
+}
+
+.cls-1 {
+  fill: #fff;
+}
+
+.cls-2 {
+  fill: #915f3a;
+}
+
+.cls-3 {
+  fill: #37563c;
+}
+
+.cls-4 {
+  clip-path: url(#clippath-2);
+}
+
+.cls-5 {
+  isolation: isolate;
+}
+
+.cls-6 {
+  fill: url(#radial-gradient);
+}
+
+.cls-6,
+.cls-7,
+.cls-8 {
+  mix-blend-mode: color-dodge;
+}
+
+.cls-9 {
+  clip-path: url(#clippath-1);
+}
+
+.cls-10 {
+  fill: #fef1e1;
+}
+
+.cls-11 {
+  fill: #5d8664;
+}
+
+.cls-12 {
+  fill: #577293;
+}
+
+.cls-13 {
+  fill: #95b56a;
+}
+
+.cls-14 {
+  fill: #b9cfea;
+}
+
+.cls-15 {
+  fill: #563118;
+}
+
+.cls-16 {
+  clip-path: url(#clippath);
+}
+
+.cls-17 {
+  fill: #9b5d42;
+}
+
+.cls-18 {
+  fill: #171623;
+}
+
+.cls-19 {
+  fill: none;
+}
+
+.cls-20 {
+  fill: #b7772f;
+}
+
+.cls-21 {
+  clip-path: url(#clippath-3);
+}
+
+.cls-22 {
+  fill: #7f4924;
+}
+
+.cls-23 {
+  fill: #456789;
+}
+
+.cls-24 {
+  fill: #d7e7ff;
+}
+
+.cls-7 {
+  opacity: 0.28;
+}
+
+.cls-8 {
+  fill: url(#radial-gradient-2);
+}
