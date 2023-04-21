@@ -20,7 +20,7 @@ const JuegoContModal = (props) => {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton className="bg-primary">
+      <Modal.Header closeButton className="bg-primary text-center">
         ¡Hay mucha luz! Es hora de ser EFICIENTES
       </Modal.Header>
       <Modal.Body className="bg-secondary">
