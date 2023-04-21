@@ -12,6 +12,7 @@ const BarraInferior = () => {
   const [nivel, setNivel] = useState(0);
   const correcto = ["10,5", "10,8", "5,8", "6,6", "2,1", "2,4", "6,3", "5,4","1,2","6,7"];
 
+
   const addInput = (input) => {
     if (correcto[nivel] == input) {
       setModalShow(true);
