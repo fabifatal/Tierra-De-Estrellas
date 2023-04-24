@@ -8,26 +8,21 @@ import JuegoContModal from "../components/juegocontaminacion/JuegoContModal";
 
 const JuegoPage = () => {
   const [nivel, setNivel] = useState(0);
-  const [modalShow, setModalShow] = useState(true)
-
-  setTimeout(() => {
-    setModalShow(true)
-  }, 120000);
+  const [modalShow, setModalShow] = useState(false);
+  if (nivel > 2) {
+    setTimeout(() => {
+      setModalShow(true);
+    }, 30000);
+  }
 
   return (
-    <div className="bg-body vh-100" data-bs-theme="dark">
-      <JuegoContModal 
-              show={modalShow}
-              onHide={() => setModalShow(false)}
-      />
+    <div className="fondoBody vh-100" data-bs-theme="dark">
+      <JuegoContModal show={modalShow} onHide={() => setModalShow(false)} />
       <NavMenu />
       <Container fluid className="mt-4">
-        <Row>
+        <Row className="d-flex align-items-center justify-content-center">
           <Col sm={2}>
-            <MenuJuego
-              nivelActual={nivel}
-              setNivel={setNivel}
-            />
+            <MenuJuego nivelActual={nivel} setNivel={setNivel} />
           </Col>
           <Col sm={10}>
             <MapaNocturno nivelActual={nivel} />

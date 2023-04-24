@@ -40,14 +40,14 @@ const MenuJuego = (props) => {
   };
 
   return (
-    <Container className="fondoMenu border border-white border-2 rounded text-white p-2 gap-2">
+    <Container className="fondoMenu shadow-lg border border-white border-4 rounded text-white p-2 gap-2">
       <Correcto
         nivelActual={nivel}
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
 
-      <Col className="d-flex align-items-center justify-content-center border-bottom">
+      <Col className="d-flex align-items-center justify-content-center border-bottom border-3 border-white">
         <h3>Nivel {nivel + 1}</h3>
       </Col>
 

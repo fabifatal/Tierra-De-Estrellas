@@ -17,7 +17,7 @@ const Objetivo = (props) => {
   const objetivo = [objetivo1, objetivo2, objetivo3, objetivo4, objetivo5, objetivo6, objetivo7, objetivo8, objetivo9, objetivo10];
 
   return (
-    <Container className="border-bottom pb-2 pt-2 text-center">
+    <Container className="border-bottom border-3 border-white pb-2 pt-2 text-center">
       <h5>Objetivo</h5>
       <Image fluid rounded src={objetivo[nivel]} alt="objetivo"/>
     </Container>

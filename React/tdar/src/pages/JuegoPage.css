@@ -1,5 +1,10 @@
-.contJuego{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+.contJuego {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.fondoBody {
+    background: linear-gradient(180deg, #29054b, #670d6a);
+    background-image: linear-gradient(180deg, rgb(41, 5, 75, 0.9), rgb(103, 13, 106, 0.6)), url("../imagenes/img-juego/fondo-galaxia-acuarela-pintada-mano/5440148.jpg"); 
 }

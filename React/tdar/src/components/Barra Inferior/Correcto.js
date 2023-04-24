@@ -66,7 +66,7 @@ const Correcto = (props) => {
         <Modal.Title id="contained-modal-title-vcenter">¡Correcto!</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Image rounded src={imagenes[nivel]} className="imagencorrecta" />
+        <Image fluid rounded src={imagenes[nivel]} className="imagencorrecta" />
         <h4>{tituloCorrecto[nivel]}</h4>
         <p className="text-start">{descripcionCorrecto[nivel]}</p>
       </Modal.Body>

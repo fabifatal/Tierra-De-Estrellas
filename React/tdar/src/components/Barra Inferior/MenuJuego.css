@@ -10,7 +10,7 @@
 }
 
 .fondoMenu {
-  background-image: linear-gradient(180deg, #a800af, #170d6b);
+  background: rgb(0, 0, 0,0.5)
 }
 
 /* @media all and (max-height: 600px){
