@@ -40,7 +40,7 @@ const MenuJuego = (props) => {
   };
 
   return (
-    <Container className="bg-secondary border border-white border-2 rounded text-white p-2 gap-2">
+    <Container className="fondoMenu border border-white border-2 rounded text-white p-2 gap-2">
       <Correcto
         nivelActual={nivel}
         show={modalShow}

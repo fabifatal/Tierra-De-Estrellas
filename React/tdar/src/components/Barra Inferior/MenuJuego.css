@@ -9,7 +9,9 @@
   border-radius: 2em;
 }
 
-
+.fondoMenu {
+  background-image: linear-gradient(180deg, #a800af, #170d6b);
+}
 
 /* @media all and (max-height: 600px){
   .contBarra {
