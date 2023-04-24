@@ -5,27 +5,9 @@ import EstrellasSVG from "./EstrellasSVG";
 
 const Estrellas = (props) => {
   const maxX = 1200;
-  const maxY = 280;
+  const maxY = 600;
   const posX = props.posX/100;
   const posY = props.posY/100;
-
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
-
-  const estrellas = [];
-
-  for (let i = 0; i < 2000; i++) {
-    const estrella = (
-      <circle
-        fill="#fff"
-        cx={getRandomInt(maxX)}
-        cy={getRandomInt(maxY)}
-        r={Math.random() * 0.5}
-      />
-    );
-    estrellas.push(estrella);
-  }
   return (
     <svg>
       <defs>
@@ -45,7 +27,7 @@ const Estrellas = (props) => {
             stop-opacity="0"
           />
         </radialGradient>
-        <mask id="mask-estrellas">
+        <mask id="mask-abierto">
           <rect
             x="0"
             y="0"
@@ -60,7 +42,7 @@ const Estrellas = (props) => {
             r="100%"
             fill="url(#gradiente-estrellas)"
           />
-          <MaskEstrellas />
+          <MaskEstrellas personaje={props.maskpersonaje}/>
         </mask>
 
         <mask id="mask-cerrado">
@@ -77,12 +59,12 @@ const Estrellas = (props) => {
             ${(maxY*posY)+240}, ${maxX*(posX-(props.abrirLuz/100))} ${(maxY*posY)+240} `}
             fill="url(#lineal)"
           />
-          <MaskEstrellas />
+          <MaskEstrellas personaje={props.maskpersonaje}/>
         </mask>
       </defs>
       <svg
         mask={`${
-          props.formaLuz ? "url(#mask-estrellas)" : "url(#mask-cerrado)"
+          props.formaLuz ? "url(#mask-abierto)" : "url(#mask-cerrado)"
         }`}
       >
         <EstrellasSVG />

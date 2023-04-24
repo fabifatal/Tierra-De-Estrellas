@@ -4,15 +4,12 @@
   padding: 2vh;
 }
 
-.contNivel p{
-  display: flex;
-  justify-content: center;
-}
-
 .CardJuego {
   border: 0.1em solid white;
   border-radius: 2em;
 }
+
+
 
 /* @media all and (max-height: 600px){
   .contBarra {

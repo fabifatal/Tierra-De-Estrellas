@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./FormCoordenadas.css";
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 
 const FormCoordenadas = (props) => {
   const [respX, setRespX] = useState(1);
@@ -21,20 +21,24 @@ const FormCoordenadas = (props) => {
   };
 
   return (
-    <div className="formCoordenadas text-center">
-      <h3>Ingrese Coordenadas</h3>
-      <form onSubmit={submitHandler}> 
-        <div className="inCoord">
-          <label>X</label>
-          <input type="number" onChange={xHandler}/>
+    <Container className="formCoordenadas text-center border-bottom">
+      <h5>Coordenadas</h5>
+      <form onSubmit={submitHandler}>
+        <div className="d-flex gap-10">
+          <div className="inCoord w-100">
+            <label>X</label>
+            <input type="number" onChange={xHandler} />
+          </div>
+          <div className="inCoord w-100">
+            <label>Y</label>
+            <input type="number" onChange={yHandler} />
+          </div>
         </div>
-        <div className="inCoord">
-          <label>Y</label>
-          <input type="number" onChange={yHandler}/>
-        </div>
-        <Button size="sm" type="submit">Enviar</Button>
+        <Button size="sm" type="submit">
+          Enviar
+        </Button>
       </form>
-    </div>
+    </Container>
   );
 };
 

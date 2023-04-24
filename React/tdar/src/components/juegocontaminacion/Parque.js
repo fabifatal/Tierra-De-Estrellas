@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Parque.css";
 import Caminos from "./Componentes Parque/Caminos";
 import ArbustosAtras from "./Componentes Parque/ArbustosAtras";
@@ -11,20 +11,38 @@ import Hierbas from "./Componentes Parque/Hierbas";
 import LineasPlantas from "./Componentes Parque/LineasPlantas";
 import Luz from "./Componentes Parque/Luz";
 import Luminaria from "./Componentes Parque/Luminaria";
-import estrellas from "../../imagenes/Contaminacion/4x/Estrellas.png";
 import Estrellas from "./Componentes Parque/Estrellas";
 import Oscuridad from "./Componentes Parque/Oscuridad";
+import PersonajeParque from "./Componentes Parque/PersonajeParque";
+import CorrectoCont from "./Componentes Parque/CorrectoCont";
 
 const Parque = (props) => {
-  let posX = props.posX;
-  let posY = props.posY;
-  let cantLuz = props.cantLuz;
-  let colorLuz = props.colorLuz;
-  let formaLuz = props.formaLuz;
-  let abrirLuz = props.abrirLuz;
+  const [correcto, setCorrecto] = useState(false);
+  const [nivel, setNivel] = useState(0)
+  const posX = props.posX;
+  const posY = props.posY;
+  const cantLuz = props.cantLuz;
+  const colorLuz = props.colorLuz;
+  const formaLuz = props.formaLuz;
+  const abrirLuz = props.abrirLuz;
+  const personaje = nivel;
 
   return (
-    <div>
+    <div className="text-white">
+          {/* {`PosX:${posX} PosY:${posY} cantLuz:${cantLuz} colorLuz:${colorLuz} formaLuz:${formaLuz} personaje:${personaje}`} */}
+            <CorrectoCont 
+            show={correcto}
+            onHide={() => setCorrecto(false)}
+            setCorrecto = {setCorrecto}
+            formaLuz = {formaLuz}
+            posX={posX}
+            posY={posY}
+            cantLuz={cantLuz}
+            colorLuz={colorLuz}
+            personaje={personaje}
+            nivel={nivel}
+            setNivel={setNivel}
+            />
       <svg
         viewBox="0 0 1200 600"
         className="contenedor-parque"
@@ -54,6 +72,8 @@ const Parque = (props) => {
         <Lago />
         <Hierbas />
         <LineasPlantas />
+        <Luminaria posX={posX} posY={posY} />
+        <PersonajeParque personaje={personaje}/>
         <Luz
           posX={posX}
           posY={posY}
@@ -69,10 +89,16 @@ const Parque = (props) => {
           formaLuz={formaLuz}
           abrirLuz={abrirLuz}
         />
-        <Estrellas posX={posX} posY={posY} cantLuz={cantLuz} formaLuz={formaLuz} abrirLuz={abrirLuz}/>
-        <Luminaria posX={posX} posY={posY}  />
+        <Estrellas
+          posX={posX}
+          posY={posY}
+          cantLuz={cantLuz}
+          formaLuz={formaLuz}
+          abrirLuz={abrirLuz}
+          maskpersonaje={personaje}
+        />
       </svg>
-      {abrirLuz}
+
     </div>
   );
 };

@@ -26,7 +26,7 @@ const Correcto = (props) => {
     imgCorrecto7,
     imgCorrecto8,
     imgCorrecto9,
-    imgCorrecto10
+    imgCorrecto10,
   ];
 
   const tituloCorrecto = [
@@ -57,21 +57,24 @@ const Correcto = (props) => {
 
   return (
     <Modal
-      className="modCorrecto text-white"
       {...props}
+      className="h-40 text-center"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton className="bg-primary">
+      <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">¡Correcto!</Modal.Title>
       </Modal.Header>
-      <Modal.Body className="bg-secondary">
-        <Image src={imagenes[nivel]} />
+      <Modal.Body>
+        <Image rounded src={imagenes[nivel]} className="imagencorrecta" />
         <h4>{tituloCorrecto[nivel]}</h4>
-        <p>{descripcionCorrecto[nivel]}</p>
+        <p className="text-start">{descripcionCorrecto[nivel]}</p>
       </Modal.Body>
-      <Modal.Footer className="bg-secondary">
-        <Button onClick={props.onHide}>Close</Button>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Siguiente</Button>
+        <Button href="https://marcachile.cl/ciencia-conocimiento/grandes-descubrimientos-astronomicos-desde-chile-observatorio-natural-del-cosmos/" target="_blank">
+          Más Info
+        </Button>
       </Modal.Footer>
     </Modal>
   );

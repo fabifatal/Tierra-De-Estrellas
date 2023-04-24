@@ -17,11 +17,13 @@ const Objetivo = (props) => {
   const objetivo = [objetivo1, objetivo2, objetivo3, objetivo4, objetivo5, objetivo6, objetivo7, objetivo8, objetivo9, objetivo10];
 
   return (
-    <Container className="contObjetivo gap-4">
-      <p>Objeto a Encontrar</p>
-      <img src={objetivo[nivel]} alt="objetivo"/>
+    <Container className="border-bottom pb-2 pt-2 text-center">
+      <h5>Objetivo</h5>
+      <Image fluid rounded src={objetivo[nivel]} alt="objetivo"/>
     </Container>
   );
 };
 
+
+// className="d-flex align-items-center  gap-4"
 export default Objetivo;

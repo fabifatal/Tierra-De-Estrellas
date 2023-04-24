@@ -30,7 +30,7 @@ const JuegoContMenu = (props) => {
   const controlLuz = (aumLuz) => {
     controlParametroBinario(
       aumLuz,
-      4,
+      10,
       0,
       props.maxLuz,
       props.cantLuz,
@@ -39,7 +39,7 @@ const JuegoContMenu = (props) => {
   };
 
   const controlPosX = (aumX) => {
-    controlParametroBinario(aumX, 5, 0, 100, props.posX, props.setPosX);
+    controlParametroBinario(aumX, 2, 0, 100, props.posX, props.setPosX);
   };
 
   const controlPosY = (aumY) => {
@@ -55,11 +55,18 @@ const JuegoContMenu = (props) => {
   };
 
   const controlAbrirLuz = (abrir) => {
-    controlParametroBinario(abrir, 5, 15, 50, props.abrirLuz, props.setAbrirLuz);
-  }
+    controlParametroBinario(
+      abrir,
+      5,
+      15,
+      50,
+      props.abrirLuz,
+      props.setAbrirLuz
+    );
+  };
 
   return (
-    <div>
+    <div className="d-flex flex-column justify-content-center align-items-center gap-3 h-100">
       <ButtonGroup>
         <Button onClick={() => controlFormaLuz(true)} variant="secondary">
           Abierto
@@ -97,6 +104,8 @@ const JuegoContMenu = (props) => {
         <Button onClick={() => controlPosY(true)} variant="secondary">
           Abajo
         </Button>
+      </ButtonGroup>
+      <ButtonGroup>
         <Button onClick={() => controlPosX(false)} variant="secondary">
           Izquierda
         </Button>

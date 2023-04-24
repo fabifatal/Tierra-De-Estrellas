@@ -1,31 +1,21 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.css';
-import  NavMenu from "../components/NavMenu";
-import { EncabezadoInicio } from "../components/Encabezados";
-import { BajoEncabezadoInicio } from "../components/Comparacion";
-import { CarrucelInicio } from "../components/Carrucel";
-import Piefinal from "../components/PieFinal";
+import "./InicioPages.css";
+import logo from "../imagenes/Logo/2x/Recurso 13@2x.png"
+import LoopEstrellas from "../components/Inicio/LoopEstrellas";
+import { Link } from "react-router-dom";
 
 const InicioPages = () => {
+  const tituloInicio = "Inicio";
 
-    const tituloInicio = "Inicio";
-
-    return (
-        <div>
-
-            <NavMenu className="menux"/>
-
-            <EncabezadoInicio titulo={tituloInicio}/>
-
-            <BajoEncabezadoInicio/>
-
-            <CarrucelInicio/>
-
-            <Piefinal/>
-
-        </div>
-    )
-
-}
+  return (
+    <div className="inicioDiv">
+      <div className="estrellasinicio"><LoopEstrellas/></div>
+      <div className="inicioTitle">
+        <Link to="/Juego"> 
+        <img src={logo} alt="logo" className="inicio-boton"/>
+        </Link>
+      </div>
+    </div>
+  );
+};
 export default InicioPages;
-

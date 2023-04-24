@@ -5,25 +5,14 @@
   padding-left: 2vh;
   padding-right: 2vh;
   padding-top: 1vh;
-  padding-bottom: 1vh;
-}
-
-.formCoordenadas form {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  gap: 1vh;
+  padding-bottom: 2vh;
 }
 
 .formCoordenadas input {
   min-width: 6vh;
-  width: 20%;
-  margin-top: 3%;
+  width: 100%;
   border-radius: 5px;
-}
-
-.formCoordenadas h3 {
-  font-size: larger;
+  margin: 5%;
 }
 
 .inCoord {
