@@ -480,3 +480,7 @@ label  a{
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
 }
+
+.backgroundGradient {
+    background-image: linear-gradient(180deg, #a800af, #170d6b)
+}

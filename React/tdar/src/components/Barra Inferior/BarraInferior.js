@@ -30,20 +30,20 @@ const BarraInferior = () => {
         onHide={() => setModalShow(false)}
       />
 
-      <Col className="text-center CardJuego bg-secondary contNivel">
+      <Col className="text-center CardJuego backgroundGradient contNivel">
         <p>nivel</p>
         <h3>{nivel + 1}</h3>
       </Col>
 
-      <Col className="CardJuego bg-secondary">
+      <Col className="CardJuego backgroundGradient">
         <Objetivo nivelActual={nivel} />
       </Col>
 
-      <Col className="CardJuego bg-secondary">
+      <Col className="CardJuego  backgroundGradient">
         <FormCoordenadas onRespuesta={addInput} />
       </Col>
 
-      <Col xs={4} className="CardJuego bg-secondary">
+      <Col xs={4} className="CardJuego backgroundGradient">
         <Dialogo nivelActual={nivel} />
       </Col>
 
